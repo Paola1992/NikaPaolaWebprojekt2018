@@ -1,0 +1,7 @@
+.bgimage {
+    background-image: url("../Users/paolapatino/PhpstormProjects/WebProjekt/NikaPaolaWebprojekt2018/pictures/background") ;
+    background-color: blue;
+    background-position: center center;
+    background-size: cover;
+    height:200px;
+}
