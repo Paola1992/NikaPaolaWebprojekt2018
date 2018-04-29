@@ -21,20 +21,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
     <!-- CSS Datei importieren -->
     <link rel="stylesheet" href="css/styles.css">
     <title>Safe&amp;Send</title>
 </head>
 
-//versuche ein Hintergrund zu erstellen
-<header class="bgimage">
-    <div class="container">
-        <h1> Bild Hochladen</h1>
-    </div>
-</header>
-
 <body>
+<div class="test">test</div>
 <form action="upload.php" method="post"
       enctype="multipart/form-data">
     Datei auswählen:
