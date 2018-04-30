@@ -22,15 +22,12 @@
     <title>Registrierung</title>
 </head>
 <body>
-<div class="site-wrapper">
+
 <!-- Registrieungsformular -->
  <main>
      <div class="inner cover">
         <h1 class="margin-base-vertical">Jetzt registrieren</h1>
         <div class="container-fluid">
-            <div class="row">
-
-
                  <div class="col-sm-6">
                    <form enctype="multipart/form-data" action="regAction.php" method="post">
 
@@ -53,10 +50,8 @@
                      </form>
 
                  </div>
-             </div>
      </div>
  </main>
-</div>
 </body>
 </html>
 

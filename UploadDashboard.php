@@ -12,31 +12,53 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-    <!-- CSS Datei importieren -->
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Safe&amp;Send</title>
+    <title>Dateien uploaden | Safe&Send</title>
 </head>
 
 <body>
-<div class="test">test</div>
-<form action="upload.php" method="post"
+<main>
+    <div class="inner cover">
+        <div class="container">
+
+            <!--<div class="col-lg-12">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+                    <li class="breadcrumb-item active">Dateien uploaden</li>
+                </ol>
+                (Hier ist das Nav Feld)
+            </div>-->
+            <div class="col-lg-8 col-sm-8">
+                <form class="form-signin" method="post" action="">
+                    <h2 class="form-signin-heading">Dateien uploaden</h2>
+                    <div class="form-group">
+                        <label for="exampleInputFile">Dateien hochladen</label>
+                        <input type="file" id="exampleInputFile" name="datei">
+                    </div>
+                    <button class="btn  btn-primary" type="submit">Datei uploaden</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+</main>
+<!--<form action="upload.php" method="post"
       enctype="multipart/form-data">
     Datei auswählen:
     <input type="file" name="uploadfile"
            id="uploadfile"><br>
     <input type="submit" value="Datei
    hochladen" name="submit">
-</form>
+</form>-->
+
 </body>
 </html>
 
