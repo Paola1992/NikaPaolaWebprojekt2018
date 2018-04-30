@@ -12,6 +12,7 @@ include("dbConnection.php");
 
 //Definieren der Variablen der übergebenen Inhalte aus dem Registrieungsfeld
 $username = $_POST["username"];
+$email = $_POST["email"];
 $passwordOne = $_POST["passwordOne"];
 $passwordTwo = $_POST["passwordTwo"];
 
@@ -54,7 +55,7 @@ else
 
 //Wenn Benutzer nicht vorhanden, dann wird dieser eingetragen
     if ($counter == 0) {
-        $insertUser = "INSERT INTO user (username, password) VALUES ('$username', '$hashedPassword')";
+        $insertUser = "INSERT INTO user (username, email, password) VALUES ('$username', '$email', '$hashedPassword')";
         $sql = $dbConnect->prepare($insertUser);
         $sql = $dbConnect->query($insertUser);
 
