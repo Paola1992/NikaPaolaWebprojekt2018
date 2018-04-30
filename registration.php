@@ -34,6 +34,7 @@
                 <input type="text" name="username">
                 <br>
                 <input type="text" name="email">
+
                 <br>
                 <input type="text" name="passwordOne">
                 <br>
