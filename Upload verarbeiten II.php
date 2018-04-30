@@ -6,7 +6,7 @@
  * Time: 12:55
  */
 
-?>
+
 
 if ($fileType == "jpg" OR $fileType=="png" OR $fileType== "jpeg" OR $fileType == "gif" OR $fileType=="pdf" OR $fileType== "gif")
 {
@@ -20,3 +20,4 @@ die();
 }
 
 
+?>
