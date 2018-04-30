@@ -1,8 +1,8 @@
-.bgimage {
+body {
 
-    background-image: url("/pictures/background/Backgroundtest.jpg") center center;
+    background-image: url("https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/background/backgroundtest.jpg");
     background-size: cover;
-    height:200px;
+
 }
 
 .test {

@@ -25,18 +25,34 @@
 <body>
 
 <!-- Registrieungsformular -->
-            <div>
-            <form enctype="multipart/form-data" action="regAction.php" method="post">
-                <input type="text" name="username">
-                <br>
-                <input type="text" name="email">
-                <br>
-                <input type="text" name="passwordOne">
-                <br>
-                <input type="text" name="passwordTwo">
-                <br>
-                <input type="submit" name="submit">
-            </form>
+ <main>
+
+     <div class="container">
+         <div class="row">
+
+
+             <div class="col-sm-6">
+                 <form enctype="multipart/form-data" action="regAction.php" method="post">
+                     <input type="text" name="username">
+                     <br>
+                     <input type="text" name="email">
+                     <br>
+                     <input type="text" name="passwordOne">
+                     <br>
+                     <input type="text" name="passwordTwo">
+                     <br>
+                     <input type="submit" name="submit">
+                 </form>
+
+             </div>
+         </div>
+
+
+     </div>
+
+ </main>
+<div>
+
             </div>
 
 
