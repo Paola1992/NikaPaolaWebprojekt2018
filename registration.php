@@ -25,32 +25,47 @@
 
 <!-- Registrieungsformular -->
  <main>
-     <div class="inner cover">
-        <h1 class="margin-base-vertical">Jetzt registrieren</h1>
-        <div class="container-fluid">
-                 <div class="col-sm-6">
-                   <form enctype="multipart/form-data" action="regAction.php" method="post">
+     <div class="cover-container">
 
-                      <div class="form-group">
-                           <label for="user">Benutzername</label>
-                          <input type="text" class="form-control" id="user" placeholder="Username">
+         <div class="masthead clearfix">
+             <div class="inner">
+                 <h3 class="masthead-brand">Safe&Send</h3>
+                 <nav>
+                     <ul class="nav masthead-nav">
+                         <li class="active"><a href="index.php">Home</a></li>
+                         <li><a href="login.html">Login</a></li>
+                         <li><a href="registration.php">Registrieren</a></li>
+                     </ul>
+                 </nav>
+             </div>
+         </div>
+         <div class="inner cover">
+             <h1 class="margin-base-vertical">Jetzt registrieren</h1>
+             <div class="container-fluid">
+                 <div class="col-sm-6">
+                     <form enctype="multipart/form-data" action="regAction.php" method="post">
+
+                         <div class="form-group">
+                             <label for="user">Benutzername</label>
+                             <input type="text" class="form-control" id="user" placeholder="Username">
                          </div>
                          <div class="form-group">
                              <label for="exampleInputEmail1">E-mail Adresse</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                          </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Passwort</label>
+                         <div class="form-group">
+                             <label for="exampleInputPassword1">Passwort</label>
                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                          </div><div class="form-group">
-                          <label for="exampleInputPassword1">Passwort wiederholen</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                             <label for="exampleInputPassword1">Passwort wiederholen</label>
+                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                          </div>
                          <button type="submit" class="btn btn-primary">Senden</button>
                      </form>
 
                  </div>
-     </div>
+             </div>
+
  </main>
 </body>
 </html>
