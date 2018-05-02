@@ -23,7 +23,7 @@
 </head>
 <body>
 
-<!-- Registrieungsformular -->
+<!-- Startseite -->
 <main>
     <div class="inner cover">
         <div class="site-wrapper">
@@ -37,8 +37,8 @@
                             <h3 class="masthead-brand">Safe&Send</h3>
                             <nav>
                                 <ul class="nav masthead-nav">
-                                    <li class="active"><a href="welcome.html">Home</a></li>
-                                    <li><a href="welcome_login.html">Login</a></li>
+                                    <li class="active"><a href="index.php">Home</a></li>
+                                    <li><a href="login.html">Login</a></li>
                                     <li><a href="registration.php">Registrieren</a></li>
                                 </ul>
                             </nav>
@@ -49,7 +49,7 @@
                         <h1 class="cover-heading">Logge dich zuerst ein.</h1>
                         <p class="lead">Melde dich an oder erstelle ein Konto </p>
                         <p class="lead">
-                            <a href="welcome_login" class="btn btn-lg btn-default">Einloggen</a>
+                            <a href="login.html" class="btn btn-lg btn-default">Einloggen</a>
                         </p>
                     </div>
 

@@ -3,26 +3,4 @@ body {
     background-size: cover;
 }
 
-.test {
-    background-color: blue;
-    text-align: center;
-}
 
-/* Cover  */
-
-.cover {
-    padding: 0 20px;
-}
-.cover .btn-lg {
-    padding: 10px 20px;
-    font-weight: bold;
-}
-
-/* Padding for spacing */
-.inner {
-    padding: 30px;
-}
-
-form {
-    margin: 0 auto; width:250px;
-}
