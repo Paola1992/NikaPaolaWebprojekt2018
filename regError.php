@@ -39,7 +39,10 @@
         </div>
     </div>
     <h1 class="margin-base-vertical">Jetzt registrieren</h1>
+
+<!--Warnung wegen Email oder Passwort-->
     <div class="alert alert-danger" role="alert">Ungültige E-Mail und/oder Passwort! Bitte versuche es erneut</div>
+
     <div class="col-sm-6">
         <form enctype="multipart/form-data" action="regAction.php" method="post">
             <div class="form-group">
