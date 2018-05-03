@@ -44,7 +44,6 @@
          <div class="container-fluid">
              <div class="col-sm-6">
                  <form enctype="multipart/form-data" action="regAction.php" method="post">
-
                      <div class="form-group">
                          <label for="username">Benutzername</label>
                          <input type="text" class="form-control" id="username" placeholder="Username">
