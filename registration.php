@@ -50,7 +50,7 @@
                  <input type="email" class="form-control" name="email">
              </div>
              <div class="form-group">
-                 <label for="passwordOne">Passwort</label>
+                 <label for="passwordOne">Passwort (mind. 6 Zeichen)</label>
                  <input type="password" class="form-control" name="passwordOne">
              </div><div class="form-group">
                  <label for="passwordTwo">Passwort wiederholen</label>
