@@ -28,7 +28,7 @@
      <div class="cover-container">
          <div class="masthead clearfix">
              <div class="inner">
-                 <h3 class="masthead-brand">Safe&Send</h3>
+                 <h3 class="masthead-brand">Safe & Send</h3>
                  <nav>
                      <ul class="nav masthead-nav">
                          <li class="active"><a href="index.php">Home</a></li>
