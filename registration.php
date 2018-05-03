@@ -26,7 +26,6 @@
 <!-- Registrieungsformular -->
  <main>
      <div class="cover-container">
-
          <div class="masthead clearfix">
              <div class="inner">
                  <h3 class="masthead-brand">Safe&Send</h3>
@@ -39,33 +38,33 @@
                  </nav>
              </div>
          </div>
-         <div class="inner cover">
-             <h1 class="margin-base-vertical">Jetzt registrieren</h1>
-             <div class="container-fluid">
-                 <div class="col-sm-6">
-                     <form enctype="multipart/form-data" action="regAction.php" method="post">
+     </div>
+     <div class="inner cover">
+         <h1 class="margin-base-vertical">Jetzt registrieren</h1>
+         <div class="container-fluid">
+             <div class="col-sm-6">
+                 <form enctype="multipart/form-data" action="regAction.php" method="post">
 
-                         <div class="form-group">
-                             <label for="username">Benutzername</label>
-                             <input type="text" class="form-control" id="username" placeholder="Username">
-                         </div>
-                         <div class="form-group">
-                             <label for="email">E-mail Adresse</label>
-                             <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                         </div>
-                         <div class="form-group">
-                             <label for="passwordOne">Passwort</label>
-                             <input type="text" class="form-control" id="passwordOne" placeholder="Password">
-                         </div><div class="form-group">
-                             <label for="passwordTwo">Passwort wiederholen</label>
-                             <input type="text" class="form-control" id="passwordTwo" placeholder="Password">
-                         </div>
-                         <button type="submit" class="btn btn-primary">Senden</button>
-                     </form>
-
-                 </div>
+                     <div class="form-group">
+                         <label for="username">Benutzername</label>
+                         <input type="text" class="form-control" id="username" placeholder="Username">
+                     </div>
+                     <div class="form-group">
+                         <label for="email">E-mail Adresse</label>
+                         <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                     </div>
+                     <div class="form-group">
+                         <label for="passwordOne">Passwort</label>
+                         <input type="text" class="form-control" id="passwordOne" placeholder="Password">
+                     </div><div class="form-group">
+                         <label for="passwordTwo">Passwort wiederholen</label>
+                         <input type="text" class="form-control" id="passwordTwo" placeholder="Password">
+                     </div>
+                     <button type="submit" class="btn btn-primary">Senden</button>
+                 </form>
              </div>
-
+         </div>
+     </div>
  </main>
 </body>
 </html>
