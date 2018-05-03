@@ -46,19 +46,19 @@
                      <form enctype="multipart/form-data" action="regAction.php" method="post">
 
                          <div class="form-group">
-                             <label for="user">Benutzername</label>
-                             <input type="text" class="form-control" id="user" placeholder="Username">
+                             <label for="username">Benutzername</label>
+                             <input type="text" class="form-control" id="username" placeholder="Username">
                          </div>
                          <div class="form-group">
-                             <label for="exampleInputEmail1">E-mail Adresse</label>
-                             <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                             <label for="email">E-mail Adresse</label>
+                             <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
                          </div>
                          <div class="form-group">
-                             <label for="exampleInputPassword1">Passwort</label>
-                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                             <label for="passwordOne">Passwort</label>
+                             <input type="text" class="form-control" id="passwordOne" placeholder="Password">
                          </div><div class="form-group">
-                             <label for="exampleInputPassword1">Passwort wiederholen</label>
-                             <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                             <label for="passwordTwo">Passwort wiederholen</label>
+                             <input type="text" class="form-control" id="passwordTwo" placeholder="Password">
                          </div>
                          <button type="submit" class="btn btn-primary">Senden</button>
                      </form>
