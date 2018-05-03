@@ -23,7 +23,7 @@
 <body>
 
 <!-- Registrieungsformular -->
-<main>
+
     <div class="cover-container">
         <div class="masthead clearfix">
             <div class="inner">
@@ -60,6 +60,5 @@
             <button type="submit" class="btn btn-primary">Senden</button>
         </form>
     </div>
-</main>
 </body>
 </html>
