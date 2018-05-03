@@ -5,7 +5,6 @@
  * Date: 20.04.18
  * Time: 18:58
  */
-
 ?>
 
 <!DOCTYPE html>
@@ -39,30 +38,26 @@
              </div>
          </div>
      </div>
-     <div class="inner cover">
-         <h1 class="margin-base-vertical">Jetzt registrieren</h1>
-         <div class="container-fluid">
-             <div class="col-sm-6">
-                 <form enctype="multipart/form-data" action="regAction.php" method="post">
-                     <div class="form-group">
-                         <label for="username">Benutzername</label>
-                         <input type="text" class="form-control" id="username" placeholder="Username">
-                     </div>
-                     <div class="form-group">
-                         <label for="email">E-mail Adresse</label>
-                         <input type="text" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                     </div>
-                     <div class="form-group">
-                         <label for="passwordOne">Passwort</label>
-                         <input type="text" class="form-control" id="passwordOne" placeholder="Password">
-                     </div><div class="form-group">
-                         <label for="passwordTwo">Passwort wiederholen</label>
-                         <input type="text" class="form-control" id="passwordTwo" placeholder="Password">
-                     </div>
-                     <button type="submit" class="btn btn-primary">Senden</button>
-                 </form>
+     <h1 class="margin-base-vertical">Jetzt registrieren</h1>
+     <div class="col-sm-6">
+         <form enctype="multipart/form-data" action="regAction.php" method="post">
+             <div class="form-group">
+                 <label for="username">Benutzername</label>
+                 <input type="text" class="form-control" name="username">
              </div>
-         </div>
+             <div class="form-group">
+                 <label for="email">E-mail Adresse</label>
+                 <input type="email" class="form-control" name="email">
+             </div>
+             <div class="form-group">
+                 <label for="passwordOne">Passwort</label>
+                 <input type="password" class="form-control" name="passwordOne">
+             </div><div class="form-group">
+                 <label for="passwordTwo">Passwort wiederholen</label>
+                 <input type="password" class="form-control" name="passwordTwo">
+             </div>
+             <button type="submit" class="btn btn-primary">Senden</button>
+         </form>
      </div>
  </main>
 </body>
