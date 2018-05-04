@@ -23,7 +23,7 @@
 </head>
 
 <body>
-<form action="upload.php" method="post"
+<form action="uploadfileAction.php" method="post"
       enctype="multipart/form-data">
 </form>
 
@@ -31,14 +31,13 @@
     <div class="inner cover">
         <div class="container">
 
-            <!--<div class="col-lg-12">
+            <div class="col-lg-12">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="#">Home</a></li>
                     <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
                     <li class="breadcrumb-item active">Dateien uploaden</li>
                 </ol>
-                (Hier ist das Nav Feld)
-            </div>-->
+            </div>
             <div class="col-lg-8 col-sm-8">
                 <form class="form-signin" method="post" action="">
                     <h2 class="form-signin-heading">Dateien uploaden</h2>
@@ -64,7 +63,7 @@
            id="uploadfile"><br>
     <input type="submit" value="Datei
    hochladen" name="submit">
-</form>-->
+</form> (Riemke Vorlesung)-->
 
 </body>
 </html>
