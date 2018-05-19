@@ -67,7 +67,7 @@ if ($dataVolume > 0) {
                         //Weiterleitung zur Home-Seite
                         header("Location:index.php");
                     } else {
-                        header("Location:error401.php");
+                        header("Location:errorUpload.php");
                         echo $fileDestination;
                     }
 
