@@ -11,49 +11,58 @@
 include "dbConnection.php";
 include "session.php";
 
-$currentUsername = $_SESSION["Benutzername"];
+$username = $_SESSION["username"];
+$userId = $dbConnect->query("SELECT id FROM user WHERE username= '$username'")
+// Prüfung ob Datenvolumen von 500 MB erreicht
+$stmtFilesize = $dbConnect->query("SELECT fileSize FROM upload WHERE userid= '$userId'");
+$rowFilesize = $stmtFilesize->fetchAll(PDO::FETCH_COLUMN, 0);
+$totalFilesize = array_sum($rowFilesize);
+$dataVolume = 500 - (array_sum($rowFilesize) / 1000000);
 
-$stmt_dateigroesse = $dbConnect->query("SELECT fileSize FROM upload WHERE userid= '$currentUsername'");
-$row_dateigroesse = $stmt_dateigroesse->fetchAll(PDO::FETCH_COLUMN, 0);
-$gesamtgroesse = array_sum($row_dateigroesse);
-$datenvolumen = 500 - (array_sum($row_dateigroesse) / 1000000);
+if ($dataVolume > 0) {
+    //Prüfung ob die Datei bereits vorhanden
+    if (file_exists(str_replace(' ', '-', $_FILES['file']['tmpName']))) {
 
-if ($datenvolumen > 0) {
-
-    if (file_exists(str_replace(' ', '-', $_FILES['file']['tmp_name']))) {
+        //Erstellen eines neuen benutzer- und datumsbezogenem Dateinamen
         date_default_timezone_set('Europe/Berlin');
 
         $file = $_FILES['file'];
-        $file_name = $_FILES['file']['name'];
-        $file_ext = explode('.', $file_name);
-        $file_ext = strtolower(end($file_ext));
-        $currentUsername = $_SESSION["Benutzername"];
-        $file_name = $file_name . $currentUsername . date('Y-m-d') . time() . "." . $file_ext;
-        $anzeigename = $_FILES['file']['name'];
-        $file_name = str_replace(' ', '-', $file_name);
-        $file_tmp = $_FILES['file']['tmp_name'];
-        $file_size = $_FILES['file']['size'];
-        $file_error = $_FILES['file']['error'];
+        $fileName = $_FILES['file']['name'];
+        $fileExtension = explode('.', $fileName);
+        $fileExtension = strtolower(end($fileExtension));
+        $userId = $_SESSION["username"];
+        $fileName = $fileName . $userId . date('Y-m-d') . time() . "." . $fileExtension;
+        $displayName = $_FILES['file']['name'];
+        $fileName = str_replace(' ', '-', $fileName);
+        $fileTmp = $_FILES['file']['tmpName']; #fileTMP entspricht der eigentlichen Datei
+        $fileSize = $_FILES['file']['size'];
+        $fileError = $_FILES['file']['error'];
 
 
-        $allowed = array('txt', 'jpg', 'png', 'jpeg', 'pdf', 'mp3', 'ppt', 'pptx', 'doc', 'docx', 'xls', 'xlsx', 'pages', 'numbers', 'keynote', 'mov', 'mpeg', 'mp4', 'wma'); #festelgen der erlaubten Dateitypen
+        // Definition der erlaubten Dateiendungen
+        $allowedExtensions = array('txt', 'jpg', 'png', 'jpeg', 'pdf', 'mp3', 'ppt', 'pptx', 'doc', 'docx', 'xls', 'xlsx', 'pages', 'numbers', 'keynote', 'mov', 'mpeg', 'mp4', 'wma');
 
-        if (in_array($file_ext, $allowed)) #Überprüfung des Dateityps
+
+        //Überprüfung des Dateityps
+        if (in_array($fileExtension, $allowed))
         {
-            if ($file_error === 0) {
-                if ($file_size <= 50000000) #Überprüfung der Filegröße
+            if ($fileError === 0) {
+                //Überprüfung ob Datei größer 5 MB
+                if ($fileSize <= 50000000)
                 {
-                    $file_name_new = basename($file_name);
-                    $file_destination = "uploads/" . $file_name_new;
+                    $fileNameNew = basename($fileName);
+                    $fileDestination = "uploads/" . $fileName;
 
-                    if (move_uploaded_file($file_tmp, $file_destination)) {
 
-                        #Datenbank-Eintrag des Files mit zugehörigem Benutzer
+                    //Upload der Datei und prüfen auf Fehler
+                    if (move_uploaded_file($fileTmp, $fileDestination)) {
 
-                        $currentUsername = $_SESSION["Benutzername"];
+                        //Datenbank-Eintrag der Datei mit zugehörigem Benutzer
 
-                        $eintrag = $dbConnect->exec("INSERT INTO upload (file, userid, fileSize, filename) VALUES ('$file_name_new', '$currentUsername','$file_size','$file_name')");
-                        $query = $dbConnect->query($eintrag);
+                        $userId = $_SESSION["username"];
+
+                        $sql = $dbConnect->exec("INSERT INTO upload (file, userid, fileSize, filename) VALUES ('$fileNameNew', '$userId','$fileSize','$fileName')");
+                        $query = $dbConnect->query($sql);
 
                         #Weiterleitung zur Home-Seite
                         header("Location: index.php");
