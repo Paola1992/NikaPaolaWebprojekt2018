@@ -5,7 +5,7 @@
  * Date: 29.04.18
  * Time: 17:46
  */
-*/
+
 //Verbindung DB
 $dbServername = "localhost";
 $dbName = "u-pp020";
