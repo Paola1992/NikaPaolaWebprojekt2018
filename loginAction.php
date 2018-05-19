@@ -27,7 +27,7 @@ $row = $stmt->fetch();
 if ($hashedPassword === $row['password'])
 {
     $_SESSION["username"] = $username;
-   // header("Location: home.php");
+    header("Location: UploadDashboard.php");
     echo 'Login erfolgreich. <br> <a href="home.html">Geschützer Bereich</a>';
 
 }

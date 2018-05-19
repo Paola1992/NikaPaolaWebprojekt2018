@@ -39,11 +39,11 @@
                 </ol>
             </div>
             <div class="col-lg-8 col-sm-8">
-                <form class="form-signin" method="post" action="uploadfileAction.php">
+                <form enctype="multipart/form-data" class="form-signin" method="post" action="uploadfileAction.php">
                     <h2 class="form-signin-heading">Dateien uploaden</h2>
                     <div class="form-group">
                         <label for="exampleInputFile">Dateien hochladen</label>
-                        <input type="file" id="uploadFile" name="file">
+                        <input type="file" id="file" name="file">
                     </div>
                     <button class="btn  btn-primary" type="submit">
                         <!--<span class="glyphicons glyphicons-cloud-upload"
