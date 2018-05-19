@@ -32,7 +32,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="dashboard.php">Safe&Send</a>
+            <a class="navbar-brand" href="HomeDashboard.php">Safe&Send</a>
 
         </div>
 
@@ -40,7 +40,7 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li>
-                    <a href="dashboard.php">Home</a>
+                    <a href="HomeDashboard.php">Home</a>
                 </li>
             </ul>
 

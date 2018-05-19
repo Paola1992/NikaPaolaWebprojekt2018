@@ -28,7 +28,7 @@ if ($hashedPassword === $row['password'])
 {
     $_SESSION["username"] = $username;
    // header("Location: home.php");
-    echo 'Login erfolgreich. <br> <a href="home.html">Geschützer Bereich</a>';
+    echo 'Login erfolgreich. <br> <a href="HomeDashboard.php">Geschützer Bereich</a>';
 
 }
 else
