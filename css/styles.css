@@ -3,4 +3,8 @@ body {
     background-size: cover;
 }
 
+.inner-cover {
+    margin:0 auto;
+}
+
 
