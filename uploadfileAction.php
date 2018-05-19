@@ -64,28 +64,28 @@ if ($dataVolume > 0) {
                         $sql = $dbConnect->prepare($insertFile);
                         $sql = $dbConnect->query($insertFile);
 
-                        #Weiterleitung zur Home-Seite
-                        header("Location: index.php");
+                        //Weiterleitung zur Home-Seite
+                        header("Location:index.php");
                     } else {
-                        //header("Location:error401.php");
+                        header("Location:error401.php");
                         echo $fileDestination;
                     }
 
 
                 } else {
-                    header("Location:error_dateigroesse.php");
+                    header("Location:errorFilesize.php");
                 }
-            } else echo "fehler aufgetreten";
+            } else echo "Es ist ein Fehler aufgetreten";
 
         } else {
-            header("Location:error_dateityp.php");
+            header("Location:errorFileExtension.php");
         }
 
     } else {
 
-        header("Location:error_gleichedatei.php");
+        header("Location:errorSameFile.php");
     }
-} else header("Location:error_datenvolumen.php");
+} else header("Location:errorDataVolume.php");
 ?>
 <!-- if ($fileType == "jpg" OR $fileType=="png" OR $fileType== "jpeg" OR $fileType == "gif" OR $fileType=="pdf" OR $fileType== "gif")
 {
