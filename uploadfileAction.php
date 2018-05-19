@@ -65,25 +65,25 @@ if ($dataVolume > 0) {
                         $query = $dbConnect->query($sql);
 
                         #Weiterleitung zur Home-Seite
-                        header("Location: index.php");
+                        header("Location:index.php");
                     } else {
                         header("Location:error401.php");
                     }
 
 
                 } else {
-                    header("Location:error_dateigroesse.php");
+                    header("Location:errorFilesize.php");
                 }
             } else echo "fehler aufgetreten";
 
         } else {
-            header("Location:error_dateityp.php");
+            header("Location:errorFileExtension.php");
         }
 
     } else {
-        header("Location:error_gleichedatei.php");
+        header("Location:errorSameFile.php");
     }
-} else header("Location:error_datenvolumen.php");
+} else header("Location:errorDatenVolume.php");
 ?>
 <!-- if ($fileType == "jpg" OR $fileType=="png" OR $fileType== "jpeg" OR $fileType == "gif" OR $fileType=="pdf" OR $fileType== "gif")
 {

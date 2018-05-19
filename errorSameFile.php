@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: paolapatino
  * Date: 19.05.18
- * Time: 15:03
+ * Time: 15:07
  */
 ?>
 <!DOCTYPE html>
@@ -40,7 +40,7 @@
 <h1 class="margin-base-vertical">Jetzt Datei Hochladen</h1>
 
 <!--Warnung wegen Daten Volumen-->
-<div class="alert alert-danger" role="alert">Dateiformat kann nicht hochgeladen werden</div>
+<div class="alert alert-danger" role="alert">Datei existiert bereits</div>
 
 <div class="col-sm-6">
     <form class="form-signin" method="post" action="uploadfileAction.php">
