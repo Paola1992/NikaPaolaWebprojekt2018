@@ -23,7 +23,7 @@
 </head>
 <body>
 <?php
-include "navegation.php";
+include "navigation.php";
 ?>
 <div class="container">
     <div class="page-header">
