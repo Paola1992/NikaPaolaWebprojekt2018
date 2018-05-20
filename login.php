@@ -39,7 +39,7 @@ include "navegationIndex.php";
                     Passwort<br>
                     <input type="password" name="password" maxlength="20" style="color:black"/><br>
                     <br>
-                    <input class="btn btn-primary btn-lg" href="#" role="button" type="submit" value="Einloggen"/>
+                    <input class="btn btn-primary btn-lg" href="homeDashboard.php" role="button" type="submit" value="Einloggen"/>
                 </form>
                 <br>Noch kein Mitglied? <a href="registration.php" style="color:grey"> Jetzt Registrieren </a>
             </div>

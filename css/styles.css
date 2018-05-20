@@ -10,10 +10,17 @@ body {
 
 .inner-cover {
     text-align: center;
+    form
+    width: 500px
+    border 2px solid blue;
+    margin: 0 auto
 }
 
 .col-sm-6 {
     text-align: center;
+    width: 500px
+    border 2px solid blue;
+    margin: 0 auto
 }
 
 .form-group {
@@ -22,4 +29,14 @@ body {
 
 .cover-container {
     text-align: center;
+}
+
+form {
+    margin: 20px auto;
+    width: 300px;
+
+}
+
+input {
+    padding: 10px;
 }

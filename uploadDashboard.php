@@ -19,7 +19,7 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
-    <title>Dateien uploaden | Safe&Send</title>
+    <title>Dateien hochladen | Safe&ampSend</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@ include "navegation.php";
         <div class="container">
             <div class="col-lg-8 col-sm-8">
                 <form enctype="multipart/form-data" class="form-signin" method="post" action="uploadfileAction.php">
-                    <h2 class="form-signin-heading">Dateien uploaden</h2>
+                    <h2 class="form-signin-heading">Dateien hochladen</h2>
                     <div class="form-group">
                         <label for="exampleInputFile">Dateien hochladen</label>
                         <input type="file" id="file" name="file">
