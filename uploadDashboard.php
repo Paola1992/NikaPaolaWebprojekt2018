@@ -23,21 +23,15 @@
 </head>
 
 <body>
+<?php
+include "navegation.php";
+?>
 <form action="uploadfileAction.php" method="post"
       enctype="multipart/form-data">
 </form>
-
 <main>
     <div class="inner cover">
         <div class="container">
-
-            <div class="col-lg-12">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="#">Home</a></li>
-                    <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
-                    <li class="breadcrumb-item active">Dateien uploaden</li>
-                </ol>
-            </div>
             <div class="col-lg-8 col-sm-8">
                 <form enctype="multipart/form-data" class="form-signin" method="post" action="uploadfileAction.php">
                     <h2 class="form-signin-heading">Dateien uploaden</h2>

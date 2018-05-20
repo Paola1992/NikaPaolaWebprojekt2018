@@ -2,8 +2,8 @@
 /**
  * Created by PhpStorm.
  * User: paolapatino
- * Date: 04.05.18
- * Time: 12:55
+ * Date: 20.05.18
+ * Time: 13:28
  */
 ?>
 
@@ -24,7 +24,7 @@
 <!-- NAVIGATION-->
 <nav class="navbar navbar-expand-md navbar-left navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
-        <a class="navbar-brand" href="homeDashboard.php"><img
+        <a class="navbar-brand" href="index.php"><img
                     src="https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/logo/LogoWeißFont.png" width="300"
                     height="80"
         </a>
@@ -34,12 +34,12 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="homeDashboard.php">Home</a>
+                    <a class="nav-link" href="index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="logout.php">Ausloggen</a>
+                    <a class="nav-link" href="login.php">Einloggen</a>
                 </li>   <li class="nav-item">
-                    <a class="nav-link" href="#">Menü</a>
+                    <a class="nav-link" href="registration.php">Registrieren</a>
             </ul>
         </div>
 
