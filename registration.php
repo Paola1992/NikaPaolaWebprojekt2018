@@ -22,46 +22,43 @@
     <title>Registrierung </title>
 </head>
 <body>
-
+<?php
+include "navegationIndex.php";
+?>
 
 <!-- Registrieungsformular -->
+<div class="site-wrapper">
 
-<div class="cover-container">
-    <div class="masthead clearfix">
-        <div class="inner">
-            <h3 class="masthead-brand">Safe & Send</h3>
-            <nav>
-                <ul class="nav masthead-nav">
-                    <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="login.php">Login</a></li>
-                    <li><a href="registration.php">Registrieren</a></li>
-                </ul>
-            </nav>
+    <div class="site-wrapper-inner">
+
+        <div class="cover-container">
+
+            <div class="inner cover">
+                <h1 class="margin-base-vertical">Jetzt registrieren</h1>
+                <div class="col-sm-6">
+                    <form enctype="multipart/form-data" action="regAction.php" method="post">
+                        <div class="form-group">
+                            <label for="username">Benutzername</label>
+                            <input type="text" class="form-control" name="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail Adresse</label>
+                            <input type="email" class="form-control" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordOne">Passwort (mind. 6 Zeichen)</label>
+                            <input type="password" class="form-control" name="passwordOne">
+                        </div>
+                        <div class="form-group">
+                            <label for="passwordTwo">Passwort wiederholen</label>
+                            <input type="password" class="form-control" name="passwordTwo">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Senden</button>
+                    </form>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<h1 class="margin-base-vertical">Jetzt registrieren</h1>
-<div class="col-sm-6">
-    <form enctype="multipart/form-data" action="regAction.php" method="post">
-        <div class="form-group">
-            <label for="username">Benutzername</label>
-            <input type="text" class="form-control" name="username">
-        </div>
-        <div class="form-group">
-            <label for="email">E-Mail Adresse</label>
-            <input type="email" class="form-control" name="email">
-        </div>
-        <div class="form-group">
-            <label for="passwordOne">Passwort (mind. 6 Zeichen)</label>
-            <input type="password" class="form-control" name="passwordOne">
-        </div>
-        <div class="form-group">
-            <label for="passwordTwo">Passwort wiederholen</label>
-            <input type="password" class="form-control" name="passwordTwo">
-        </div>
-        <button type="submit" class="btn btn-primary">Senden</button>
-    </form>
-</div>
 </body>
 </html>
 

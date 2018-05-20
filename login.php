@@ -21,25 +21,14 @@
     <title>Einloggen</title>
 </head>
 <body>
+<?php
+include "navegationIndex.php";
+?>
 <div class="site-wrapper">
 
     <div class="site-wrapper-inner">
 
         <div class="cover-container">
-
-            <div class="masthead clearfix">
-                <div class="inner">
-                    <h3 class="masthead-brand"><a href="index.php">Safe&Send</a></h3>
-                    <nav>
-                        <ul class="nav masthead-nav">
-                            <li><a href="index.php">Home</a></li>
-                            <li class="active"><a href="login.php">Login</a></li>
-                            <li><a href="registration.php">Registrieren</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-
             <div class="inner cover">
                 <h1 class="cover-heading">Einloggen</h1>
                 <p>Logge dich jetzt mit deinen Benutzerdaten ein.</p>
