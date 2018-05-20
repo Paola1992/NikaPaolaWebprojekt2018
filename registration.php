@@ -33,7 +33,7 @@
             <nav>
                 <ul class="nav masthead-nav">
                     <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="login.php">Login</a></li>
                     <li><a href="registration.php">Registrieren</a></li>
                 </ul>
             </nav>

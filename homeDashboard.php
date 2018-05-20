@@ -31,7 +31,7 @@ include "navegation.php";
             <small>Deine Dateien</small>
         </h1>
     </div>
-    <li><a href="UploadDashboard.php">Datei Hochladen</a></li>
+    <li><a href="uploadDashboard.php">Datei Hochladen</a></li>
 </body>
 </html>
 

@@ -17,63 +17,42 @@
     <!-- Bootstrap -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <title>Safe&ampSend</title>
 </head>
 <body>
-<!-- NAVIGATION -->
-<nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-        <!-- Titel und Schalter -->
-        <div class="navbar-header">
+<!-- NAVIGATION links-->
+<ul class="nav navbar-nav navbar-left navbar-expand-lg navbar-dark bg-dark">
+    <li class="nav-item">
+        <img src="https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/logo/LogoWeißFont.svg" width="100" height="100" class="d-inline-block align-top" alt="">
+    </li>
+</ul>
+<!-- NAVIGATION rechts-->
+<ul class="nav justify-content-end navbar navbar-expand-lg navbar-dark bg-dark ">
 
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                <span class="sr-only">Navigation ein-/ausblenden</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="HomeDashboard.php">Safe&Send</a>
-
+    <li class="nav-item">
+        <a class="nav-link active" href="homeDashboard.php">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" href="logout.php">Ausloggen</a>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menü
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="profil.php">Konto</a>
         </div>
-
-        <!-- Navigation links -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li>
-                    <a href="HomeDashboard.php">Home</a>
-                </li>
-            </ul>
-
-            <!-- Navigation rechts -->
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <!-- < ?php  (Space muss man wegmachen damit es funktioniert)
-                     #include "session.php";
-                     ### Profilbild-Anzeige
-                     include "dbconnection.php";
-                     $stmt = $dbConnect->query("SELECT pb FROM login WHERE Benutzername='" . $_SESSION["Benutzername"] . "'");
-                     $row = $stmt->fetch();
-                     $profilbild = "<img src='" . $row['pb'] . "' width='18' height='18' ";
+    </li>
+</ul>
 
 
-                     ### Benutzernamen anzeigen
-                     $benutzername = $_SESSION["Benutzername"];
-                     echo '<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">' . $profilbild . ' class="profile-image img-circle">  Hallo ' . $benutzername . '<span class="caret"></span></a>';
-                     # http://placehold.it/18x18
-                     ? > -->
+<!-- Footer
+<div class="navbar navbar-default navbar-fixed-bottom">
+    <div class="container">
+        <p class="navbar-text pull-left">© 2018 - Safe &amp Send</p>
+        <p class="navbar-text pull-right"><a class="impressum" href="imprint.php">Impressum</a></p>
+    </div>
+</div>-->
 
-                    <!--<ul class="dropdown-menu">
-
-                        <li><a href="passwort_aendernh.php">Passwort ändern</a></li>
-                        <li><a href="profilbild_aendern.php">Profilbild ändern</a></li>
-                        <li><a href="account_loeschen_ausfuehren.php">Account löschen</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="logout.php">Logout</a></li>
-                    </ul>   (Passwort ändern) -->
-                </li>
-            </ul>
-        </div> <!-- navbar-collapse -->
-    </div> <!-- container-fluid -->
-</nav>
 </body>
 </html>

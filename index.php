@@ -34,17 +34,17 @@
             <nav>
                 <ul class="nav masthead-nav">
                     <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
+                    <li><a href="login.php">Login</a></li>
                     <li><a href="registration.php">Registrieren</a></li>
                 </ul>
             </nav>
         </div>
     </div>
         <div class="inner-cover">
-            <h1 class="cover-heading">Logo</h1>
+            <img src="https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/logo/LogoRosa.svg" width="1000" height="1000" class="d-inline-block align-top" alt="">
             <p class="lead">Wir machen sichere Cloud Storage für jedermann verfügbar. Melde dich bei Safe&Send an</p>
             <p class="lead">
-                <a href="login.html" class="btn btn-lg btn-default">Einloggen</a>
+                <a href="login.php" class="btn btn-lg btn-default">Einloggen</a>
             </p>
             <br>Noch kein Mitglied? <a href="registration.php" style="color:grey"> Jetzt Registrieren </a>
         </div>
