@@ -23,6 +23,9 @@
 </head>
 
 <body>
+<?php
+include "navegation.php";
+?>
 <form action="uploadfileAction.php" method="post"
       enctype="multipart/form-data">
 </form>
