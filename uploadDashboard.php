@@ -29,7 +29,6 @@ include "navegation.php";
 <form action="uploadfileAction.php" method="post"
       enctype="multipart/form-data">
 </form>
-
 <main>
     <div class="inner cover">
         <div class="container">
