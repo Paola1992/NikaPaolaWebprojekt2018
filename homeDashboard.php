@@ -25,13 +25,45 @@
 <?php
 include "navigation.php";
 ?>
+
+<table class="table">
+    <thead class="thead-dark">
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Hochgeladen</th>
+        <th scope="col">Größe</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <th scope="row">1</th>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th scope="row">2</th>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <th scope="row">3</th>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </tbody>
+</table>
+    </tbody>
+</table>
 <div class="container">
-    <div class="page-header">
-        <h1>Home
-            <small>Deine Dateien</small>
-        </h1>
-    </div>
-    <li><a href="uploadDashboard.php">Datei Hochladen</a></li>
+    <input class="btn btn-primary btn-lg" href="uploadDashboard.php" role="button" type="submit" value="Datei hochladen"/>
+
+    <button class="btn  btn-primary" type="submit" href="uploadDashboard.php">
+      Datei Hochladen
+    </button>
 </body>
 </html>
 

@@ -35,7 +35,7 @@ include "navigationIndex.php";
 
             <div class="inner cover">
                 <h1 class="margin-base-vertical">Jetzt registrieren</h1>
-                <div class="col-sm-6">
+                <div class="align-content-lg-center col-lg-6">
                     <form enctype="multipart/form-data" action="regAction.php" method="post">
                         <div class="form-group">
                             <label for="username">Benutzername</label>
