@@ -24,46 +24,30 @@
 <body>
 <?php
 include "navigation.php";
+include "file.php";
 ?>
-
-<table class="table">
-    <thead class="thead-dark">
-    <tr>
-        <th scope="col">#</th>
-        <th scope="col">Name</th>
-        <th scope="col">Hochgeladen</th>
-        <th scope="col">Größe</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <th scope="row">1</th>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <th scope="row">2</th>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    <tr>
-        <th scope="row">3</th>
-        <td></td>
-        <td></td>
-        <td></td>
-    </tr>
-    </tbody>
-</table>
-    </tbody>
-</table>
 <div class="container">
-    <input class="btn btn-primary btn-lg" href="uploadDashboard.php" role="button" type="submit" value="Datei hochladen"/>
-
-    <button class="btn  btn-primary" type="submit" href="uploadDashboard.php">
-      Datei Hochladen
-    </button>
+    <form action="uploadfileAction.php" method="post"
+          enctype="multipart/form-data">
+    </form>
+    <main>
+        <div class="inner cover">
+            <div class="container">
+                <div class="col-lg-8 col-sm-8">
+                    <form enctype="multipart/form-data" class="form-signin" method="post" action="uploadfileAction.php">
+                        <h2 class="form-signin-heading">Dateien hochladen</h2>
+                        <div class="form-group">
+                            <label for="exampleInputFile">Dateien hochladen</label>
+                            <input type="file" id="file" name="file">
+                        </div>
+                        <button class="btn  btn-primary" type="submit">
+                            <!--<span class="glyphicons glyphicons-cloud-upload"
+                                  aria-hidden="true"></span> (icon einfügen, ging aber nicht)--> Datei uploaden
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
 </body>
 </html>
 

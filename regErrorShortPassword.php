@@ -21,23 +21,11 @@
     <title>Registrierung </title>
 </head>
 <body>
-
+<?php
+include "navigationIndex.php";
+?>
 <!-- Registrieungsformular -->
 
-<div class="cover-container">
-    <div class="masthead clearfix">
-        <div class="inner">
-            <h3 class="masthead-brand">Safe & Send</h3>
-            <nav>
-                <ul class="nav masthead-nav">
-                    <li class="active"><a href="index.php">Home</a></li>
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="registration.php">Registrieren</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div>
 <h1 class="margin-base-vertical">Jetzt registrieren</h1>
 
 <!--Warnung wegen Email oder Passwort-->
