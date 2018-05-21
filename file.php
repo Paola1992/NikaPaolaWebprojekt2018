@@ -9,14 +9,15 @@
 
 #Datenvolumen Ausgabe
 include "dbConnection.php";
+include "session.php";
 
 $username = $_SESSION["username"];
 
 $stmtFileSize = $dbConnect->query("SELECT fileSize FROM upload WHERE user= '$username'");
 $rowFileSize = $stmtFileSize->fetchAll(PDO::FETCH_COLUMN, 0);
 $totalSize = array_sum($rowFileSize);
-$dataVolume = 500 - (array_sum($rowFileSize) / 1000000);
-$percent = 0 - ($dataVolume - 500);
+$dataVolume = 500 - ($totalSize / 1000000);
+$percent = ($totalSize / 5000000);
 $percent = round($percent, 0, PHP_ROUND_HALF_DOWN);
 
 echo "Ihr Datenvolumen beträgt noch:&nbsp" . round($dataVolume, 2) . "MB";
@@ -34,8 +35,8 @@ echo '<div class="table-responsive">';
 echo '<table class="table table-striped table-hover">';
 
 while ($row = $stmt2->fetch()) {
-    $displayName = $row['anzeigename'];
-    $fileName = $row['dateiname'];
+    $displayName = $row['file'];
+    $fileName = $row['filename'];
     echo "<tr>";
     echo '<td><a href="uploads/' . $fileName . '">' . $displayName . '</td>';
     $URL = 'https://mars.iuk.hdm-stuttgart.de/~pp020/uploads/' . $fileName;
