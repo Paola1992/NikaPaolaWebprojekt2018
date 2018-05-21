@@ -22,7 +22,7 @@
 </head>
 <body>
 <?php
-include "navegationIndex.php";
+include "navigationIndex.php";
 ?>
 <div class="site-wrapper">
 

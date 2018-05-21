@@ -24,7 +24,7 @@
 </head>
 <body>
 <?php
-include "navegationIndex.php";
+include "navigationIndex.php";
 ?>
 <div class="cover-container">
     <div class="inner-cover">

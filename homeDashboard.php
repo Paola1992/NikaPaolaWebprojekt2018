@@ -58,6 +58,11 @@ include "navigation.php";
 </table>
     </tbody>
 </table>
+
+
+<?php
+include "file.php";
+?>
 <div class="container">
     <input class="btn btn-primary btn-lg" href="uploadDashboard.php" role="button" type="submit" value="Datei hochladen"/>
 
