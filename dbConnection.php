@@ -18,7 +18,6 @@ try {
 
     // set the PDO error mode to exception
     $dbConnect->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Datenbankverbindung erfolgreich";
 }
 catch(PDOException $e)
 {

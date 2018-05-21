@@ -12,8 +12,11 @@ $file2 = 'uploads/'.$file;
 
 if (file_exists($file2)) {
     unlink($file2);
-    $delete = $dbConnect->exec("DELETE FROM upload WHERE filename = '$file'");
-    $query = $dbConnect->query($delete);
+    $delete = "DELETE FROM upload WHERE filename = '$file'";
+
+    $sql = $dbConnect->prepare($delete);
+    $sql = $dbConnect->query($delete);
+
     header("location:homeDashboard.php");
 }
 ?>
