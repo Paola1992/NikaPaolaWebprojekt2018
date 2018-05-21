@@ -47,7 +47,7 @@ while ($row = $stmt2->fetch()) {
 
     echo '<td><a href="edit.php?varname=' . $fileName . '" target="_self">umbenennen</a></td>';
 
-    echo '<td><a href="datei_loeschen.php?varname=' . $fileName . '" target="_self">löschen</a></td>';
+    echo '<td><a href="deleteFile.php?varname=' . $fileName . '" target="_self">löschen</a></td>';
 
     $username = $_SESSION["username"];
     echo '<td><a href="mailto:?subject=' . $username . ' möchte einen Link mit dir teilen&body=Klicke auf folgenden Link, um die Datei anzusehen: ' . $URL . '" target="_self">teilen</a></td>';
