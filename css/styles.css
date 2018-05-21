@@ -10,25 +10,44 @@ body {
     text-align: center;
 }
 
+.site-wrapper {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 .inner-cover {
     text-align: center;
-    width: 500px
-    margin: center;
+    width: 500px;
+    margin: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .col-sm-6 {
     text-align: center;
-    width: 500px
-    margin: 0 auto
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .form-group {
     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cover-container {
     text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 form {
