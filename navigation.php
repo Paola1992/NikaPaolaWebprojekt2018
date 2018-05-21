@@ -15,8 +15,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Safe&ampSend</title>
 </head>
 <body>
@@ -34,13 +34,13 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="homeDashboard.php">Home</a>
+                    <a class="navigation-link" href="homeDashboard.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="logout.php">Ausloggen</a>
+                    <a class="navigation-link" href="logout.php">Ausloggen</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Menü</a>
+                    <a class="navigation-link" href="#">Menü</a>
                 </li>
             </ul>
         </div>
