@@ -65,7 +65,7 @@ if ($dataVolume > 0) {
                         $sql = $dbConnect->query($insertFile);
 
                         //Weiterleitung zur Home-Seite
-                        header("Location:index.php");
+                        header("Location:homeDashboard.php");
                     } else {
                         header("Location:errorUpload.php");
                         echo $fileDestination;
