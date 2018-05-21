@@ -1,20 +1,12 @@
-{
-    margin:  0;
-    padding:0;
-}
-
 body {
     background-image: url("https://mars.iuk.hdm-stuttgart.de/~ng046/pictures/background/cloudsbackground.jpg");
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    text-align: center;
 }
 
 .inner {
     text-align: center;
 }
-
 
 .inner-cover {
     text-align: center;
@@ -30,4 +22,10 @@ body {
 
 .cover-container {
     text-align: center;
+}
+
+.site-wrapper {
+    margin: center;
+
+
 }
