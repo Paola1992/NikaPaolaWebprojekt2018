@@ -51,24 +51,29 @@ $passwordTwo = $_POST["passwordTwo"];
               $insertUser = "INSERT INTO user (username, email, password) VALUES ('$username', '$email', '$hashedPassword')";
               $sql = $dbConnect->prepare($insertUser);
               $sql = $dbConnect->query($insertUser);
+          } else {
+              header("Location:regError.php");
           }
 
 
-          /* //Wenn erfolgreich wird der Benutzer eingeloggt
-                  if ($insertUser == true) {
 
-                      header('Location:welcome2.html');
+          //Wenn erfolgreich wird der Benutzer eingeloggt
+                  if ($insertUser == true)
+                  {
+                      header('Location:homeDashboard.php');
                       exit;
                   } else {
                       echo "Fehler beim Speichern des Benutzernames. <a href=\"registration.php\">Zurück</a>";
                   }
-              } else {
-                  //header("Location:register_fehler_benutzername.php");
-              }
-
-          */
 
 
-      }
+
+
+
+
+
+
+  }
+
   }
   ?>
