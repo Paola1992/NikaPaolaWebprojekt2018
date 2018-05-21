@@ -33,7 +33,7 @@ if ($hashedPassword === $row['password'])
 }
 else
 {
-   // header("Location:welcome_fehler.html");
+    header("Location:loginError.php");
 echo 'Login fehlgeschlagen';
 }
 ?>
