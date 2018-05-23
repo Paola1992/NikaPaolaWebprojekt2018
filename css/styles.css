@@ -1,6 +1,6 @@
 body {
-    background-image: url("https://mars.iuk.hdm-stuttgart.de/~ng046/pictures/background/cloudsbackground.jpg") ;
-    background-size: cover;
+    background-image: url("https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/background/Hintergrund.png") ;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;

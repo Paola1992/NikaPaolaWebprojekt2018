@@ -30,7 +30,9 @@
                     height="80"
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="navbar-toggler-icon"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
@@ -43,6 +45,7 @@
 
 
     </div>
+
 </nav>
 
 <!-- NAVIGATION links
