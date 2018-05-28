@@ -27,7 +27,7 @@
 include "navigationIndex.php";
 ?>
 <div class="cover-container">
-    <div class="inner-cover">
+    <div class="logo">
         <img src="https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/logo/LogoRosa.svg" width="1000" height="1000"
              class="d-inline-block align-top" alt="">
         <p class="lead">Wir machen sichere Cloud Storage für jedermann verfügbar. Melde dich bei Safe&Send an</p>
@@ -35,6 +35,12 @@ include "navigationIndex.php";
             <a href="login.php" class="btn btn-lg btn-default">Einloggen</a>
         </p>
         <br>Noch kein Mitglied? <a href="registration.php" style="color:grey"> Jetzt Registrieren </a>
+    </div>
+</div>
+
+<div class="mastfoot">
+    <div class="inner">
+        <p> © copyright 2018 by Grünen, Patiño. <a href="impressum.php">Impressum</a></p>
     </div>
 </div>
 
