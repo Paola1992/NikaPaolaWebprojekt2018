@@ -26,6 +26,7 @@
 <?php
 include "navigationIndex.php";
 ?>
+
 <div class="cover-container">
     <div class="logo">
         <img src="https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/logo/LogoRosa.svg" width="1000" height="1000"
