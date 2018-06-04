@@ -27,8 +27,6 @@ echo '<div class="progress-bar" role="progressbar" aria-valuenow="' . $percent .
 
 
 ###Inhalt der Datenbank + Download-Funktion + Editier-Funktion + Lösch-Funktion###
-
-
 $stmt2 = $dbConnect->query("SELECT file, filename, fileSize FROM upload WHERE user='" . $_SESSION["username"] . "'");
 
 echo '<div class="table-responsive">';

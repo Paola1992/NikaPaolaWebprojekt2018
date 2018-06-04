@@ -17,19 +17,16 @@ function hashPassword($password, $username)
     return hash('sha256', $password . $username);
 }
 
-
 $hashedPassword =hashPassword($password, $username);
 
 $stmt = $dbConnect->query("SELECT password FROM user WHERE username= '$username'");
 $row = $stmt->fetch();
-
 
 if ($hashedPassword === $row['password'])
 {
     $_SESSION["username"] = $username;
     header("Location: homeDashboard.php");
     echo 'Login erfolgreich. <br> <a href="homeDashboard.php">Geschützer Bereich</a>';
-
 }
 else
 {

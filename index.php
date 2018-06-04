@@ -18,10 +18,9 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
-
     <title>Safe&Send</title>
-
 </head>
+
 <body>
 <?php
 include "navigationIndex.php";

@@ -38,10 +38,8 @@ if ($dataVolume > 0) {
         $fileSize = $_FILES['file']['size'];
         $fileError = $_FILES['file']['error'];
 
-
         // Definition der erlaubten Dateiendungen
         $allowedExtensions = array('jpg', 'png', 'jpeg', 'pdf', 'mp3', 'ppt', 'pptx', 'doc', 'docx', 'xls', 'xlsx', 'mov', 'mpeg', 'mp4', 'wma');
-
 
         //Überprüfung des Dateityps
         if (in_array($fileExtension, $allowedExtensions))
@@ -52,13 +50,12 @@ if ($dataVolume > 0) {
                 {
                     $fileNameNew = basename($fileName);
                     $fileDestination = "uploads/".$fileNameNew;
-
                     echo $fileDestination;
+
                     //Upload der Datei und prüfen auf Fehler
                     if (move_uploaded_file($fileTmp, $fileDestination)) {
 
                         //Datenbank-Eintrag der Datei mit zugehörigem Benutzer
-
                         $username = $_SESSION["username"];
                         $insertFile = "INSERT INTO upload (file, user, fileSize, filename) VALUES ('$fileNameNew', '$username','$fileSize','$fileName')";
                         $sql = $dbConnect->prepare($insertFile);
@@ -70,48 +67,15 @@ if ($dataVolume > 0) {
                         header("Location:errorUpload.php");
                         echo $fileDestination;
                     }
-
-
                 } else {
                     header("Location:errorFilesize.php");
                 }
             } else echo "Es ist ein Fehler aufgetreten";
-
         } else {
             header("Location:errorFileExtension.php");
         }
-
     } else {
-
         header("Location:errorSameFile.php");
     }
 } else header("Location:errorDataVolume.php");
 ?>
-<!-- if ($fileType == "jpg" OR $fileType=="png" OR $fileType== "jpeg" OR $fileType == "gif" OR $fileType=="pdf" OR $fileType== "gif")
-{
-echo "Dateiart ok<br>";
-} else {
-echo"Dateiart nicht zugelassen.";
-die();
-}
-if (!move_uploaded_file($_FILES["uploadfile"]["tmp_name"], "/home/gurzki/public_html/upload/files/".$_FILES["uploadfile"]["name"])) { echo "Datei nicht hochgeladen";
-die();
-}
-
-
-?> (Upload verarbeiten II)
-
-echo "Dateiname: ".$_FILES["uploadfile"]["name"]."<br>"; if($_FILES["uploadfile"]["name"]=="")
-{
-    echo "Fehler Dateiname.";
-    die(); }
-$fileName=$_FILES["uploadfile"]["name"];
-$fileType=substr($fileName,strlen($fileName)-3,strlen($fileName) ); $fileName=substr($fileName,0,strlen($fileName)-4 );
-echo "FILENAME:".$fileName."FILETYPE:".$fileType."<br>";
-if ($_FILES["uploadfile"]["size"] > 800000) {
-    echo"Datei zu groß.";
-    die();
-}  (Upload verarbeiten I) -->
-
-
-

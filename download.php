@@ -6,7 +6,6 @@
  * Time: 12:30
  */
 
-
 $file = $_GET["varname"];
 $file = 'uploads/'.$file;
 
@@ -21,7 +20,6 @@ $file = 'uploads/'.$file;
             readfile($file);
             header('location: index.php');
         }
-
 ?>
 
 <!--
