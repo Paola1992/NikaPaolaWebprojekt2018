@@ -13,8 +13,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap -->
 
+    <!-- Bootstrap -->
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
@@ -25,8 +25,8 @@
 include "navigationIndex.php";
 ?>
 
-<!--Warnung wegen Daten Volumen-->
-<div class="alert alert-danger" role="alert">Ungültiger Benutzername und/oder Passwort! Bitte versuche es erneut</div>
+<!--Warnung wegen Fehler bei Benutzername/Passwort-->
+<div class="alert alert-danger" role="alert">Ungültiger Benutzername und/oder Passwort! Bitte versuche es erneut.</div>
 
 <!--Einloggen Formular-->
 <div class="site-wrapper">
@@ -39,7 +39,6 @@ include "navigationIndex.php";
                 <p>Logge dich jetzt mit deinen Benutzerdaten ein.</p>
                 <br>
                 <form action="loginAction.php" method="post">Benutzername<br>
-
                     <input type="text" name="username" maxlength="20" style="color:black"/> <br>
                     Passwort<br>
                     <input type="password" name="password" maxlength="20" style="color:black"/><br>
@@ -50,12 +49,7 @@ include "navigationIndex.php";
                 <br>Noch kein Mitglied? <a href="registration.php" style="color:grey"> Jetzt Registrieren </a>
             </div>
         </div>
-
     </div>
-
-</div>
-
-</div>
 </div>
 </body>
 </html>

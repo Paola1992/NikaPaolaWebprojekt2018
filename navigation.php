@@ -5,9 +5,7 @@
  * Date: 04.05.18
  * Time: 12:55
  */
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="de">
@@ -20,10 +18,8 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <title>Safe&ampSend</title>
 </head>
-
 <body>
 
-<!-- NAVIGATION-->
 <nav class="navbar navbar-expand-md navbar-left navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="homeDashboard.php"><img
@@ -46,10 +42,7 @@
                 </li>
             </ul>
         </div>
-
-
     </div>
 </nav>
-
 </body>
 </html>

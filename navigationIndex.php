@@ -7,7 +7,6 @@
  */
 ?>
 
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -42,47 +41,7 @@
                 <li class="nav-item"><a class="navigation-link" href="registration.php">Registrieren</a></li>
             </ul>
         </div>
-
-
     </div>
-
 </nav>
-
-<!-- NAVIGATION links
-<ul class="navbar navbar-expand-md navbar-left navbar-dark bg-dark sticky-top">
-    <li class="nav-item">
-        <img src="https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/logo/LogoWeißFont.svg" width="100" height="100"
-             class="d-inline-block align-top" alt="">
-    </li>
-</ul>
-<!-- NAVIGATION rechts
-<ul class="nav justify-content-end navbar navbar-expand-lg navbar-dark bg-dark ">
-
-    <li class="nav-item">
-        <a class="nav-link active" href="homeDashboard.php">Home</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="logout.php">Ausloggen</a>
-    </li>
-    <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
-           aria-haspopup="true" aria-expanded="false">
-            Menü
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="profil.php">Konto</a>
-        </div>
-    </li>
-</ul>-->
-
-
-<!-- Footer
-<div class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container">
-        <p class="navbar-text pull-left">© 2018 - Safe &amp Send</p>
-        <p class="navbar-text pull-right"><a class="impressum" href="imprint.php">Impressum</a></p>
-    </div>
-</div>-->
-
 </body>
 </html>

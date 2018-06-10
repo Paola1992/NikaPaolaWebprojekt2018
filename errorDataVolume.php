@@ -16,13 +16,11 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
-
     <title>Upload</title>
 </head>
 <body>
 
 <!-- Registrieungsformular -->
-
     <div class="cover-container">
         <div class="masthead clearfix">
             <div class="inner">
