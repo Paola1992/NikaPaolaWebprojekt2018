@@ -47,7 +47,7 @@ while ($row = $stmt2->fetch()) {
     echo '<td>' . $fileExtension . '</td>';
     echo '<td><a href="download.php?varname=' . $fileName . '" target="_self">herunterladen</a> </td>';
 
-    echo '<td><a href="edit.php?varname=' . $fileName . '" target="_self">umbenennen</a></td>';
+    echo '<td><a href="editFileOne.php?varname=' . $fileName . '" target="_self">umbenennen</a></td>';
 
     echo '<td><a href="deleteFile.php?varname=' . $fileName . '" target="_self">löschen</a></td>';
 
