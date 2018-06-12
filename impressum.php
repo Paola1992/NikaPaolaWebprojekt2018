@@ -43,7 +43,7 @@ include "navigation.php";
             <p>Der Inhalt der Websites, auf die mittels Hypertext-Links oder in anderer Weise verwiesen wird, stammt nicht von uns, ist uns im Einzelnen nicht bekannt und wird von uns auch nicht zur Nutzung als eigener oder fremder Inhalt bereitgehalten. Wir übernehmen deshalb keine Verantwortung oder Gewähr für den Inhalt irgendeiner Website, auf die durch Hypertext-Links oder in anderer Weise verwiesen wird. Ein rechtsgeschäftlicher Wille ist mit der Bereitstellung solcher Verweise nicht verbunden.
             </p><br>
 
-            <h4>Haftung für Links</h4>
+            <h4>Haftung für Links </h4>
             <p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der Verlinkung nicht erkennbar. Eine permanente inhaltliche Kontrolle der verlinkten Seiten ist jedoch ohne konkrete Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.</p><br>
 
             <h4>Urheberrecht</h4>
