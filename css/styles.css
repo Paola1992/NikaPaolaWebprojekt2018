@@ -1,9 +1,10 @@
 body {
-    /*background-image: url("https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/background/Hintergrund.png") ;
+    background-image: url("https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/background/Hintergrund.png") ;
     background-repeat: no-repeat;
+    font-family: Avenir;
     display: flex;
     flex-direction: column;
-    justify-content: center;*/
+    justify-content: center;
     margin: 0;
     padding: 0;
     height: 100%;

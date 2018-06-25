@@ -17,33 +17,22 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
-
     <title>Safe&Send</title>
 
 </head>
 <body>
 <?php
 include "navigation.php";
-
 ?>
-
-
-
 <div>
-
-    <form action="shareAction.php" method="post">Teilen<br>
-        <input type="text" name="username" style="color:black"/> <br>
-        Benutzername<br>
-        <input class="btn btn-primary btn-lg" href="shareAction.php" role="button" type="submit" value="freigeben"/>
+    <form action="shareAction.php" method="post">Mit wem möchtest du die Datei teilen?<br>
+        <input type="text" name="username" style="color:black"/>
+        <input class="btn btn-primary btn-lg" href="shareAction.php" role="button" type="submit" value="Jetzt teilen"/>
     </form>
     <?php
     include "shareFile.php";
     ?>
-
 </div>
-
-
-
 
 </body>
 </html>

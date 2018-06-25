@@ -16,11 +16,9 @@ $insertShare = "INSERT INTO share (shareduser) VALUES ('$sharedName') WHERE ";
 $sql = $dbConnect->prepare($insertShare);
 $sql = $dbConnect->query($insertShare);
 
-
 if ($sharedName == "0")
 {
     header("Location:share.php");
-
 }
 
 echo $fileName . $sharedUser;

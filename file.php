@@ -45,16 +45,16 @@ while ($row = $stmt2->fetch()) {
     $fileExtension = $pathInfo['extension'];
     echo '<td>'.$fileSize.' MB</td>';
     echo '<td>' . $fileExtension . '</td>';
-    echo '<td><a href="download.php?varname=' . $fileName . '" target="_self">herunterladen</a> </td>';
+    echo '<td><a href="download.php?varname=' . $fileName . '" target="_self">Herunterladen</a> </td>';
 
-    echo '<td><a href="editFileOne.php?varname=' . $fileName . '" target="_self">umbenennen</a></td>';
+    echo '<td><a href="editFileOne.php?varname=' . $fileName . '" target="_self">Umbenennen</a></td>';
 
-    echo '<td><a href="deleteFile.php?varname=' . $fileName . '" target="_self">löschen</a></td>';
+    echo '<td><a href="deleteFile.php?varname=' . $fileName . '" target="_self">Löschen</a></td>';
 
-    echo '<td><a href="shareAction.php?varname=' . $fileName . '">teilen</a></td>';
+    echo '<td><a href="shareAction.php?varname=' . $fileName . '">mit User teilen</a></td>';
 
     $username = $_SESSION["username"];
-    echo '<td><a href="mailto:?subject=' . $username . ' möchte einen Link mit dir teilen&body=Klicke auf folgenden Link, um die Datei anzusehen: ' . $URL . '" target="_self">versenden</a></td>';
+    echo '<td><a href="mailto:?subject=' . $username . ' möchte einen Link mit dir teilen&body=Klicke auf folgenden Link, um die Datei anzusehen: ' . $URL . '" target="_self">via Mail teilen</a></td>';
     #readfile($URL.$file)
 
     echo "</tr>";
