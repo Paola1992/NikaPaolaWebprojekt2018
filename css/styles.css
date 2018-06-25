@@ -14,6 +14,7 @@ body {
 .intro {
     height: 100%;
     width: 100%;
+    justify-content: center;
     margin: auto;
     background-image: url("http://mars.iuk.hdm-stuttgart.de/home/ng046/public_html/pictures/background/mountains-1985027.jpg");
 }
