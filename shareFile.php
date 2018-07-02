@@ -8,9 +8,10 @@
 include "session.php";
 include "dbConnection.php";
 
-###Inhalt der Datenbank + Download-Funktion + Editier-Funktion + Lösch-Funktion###
+###Datein die der User hochgeladen hat###
 $stmt = $dbConnect->query("SELECT file, filename, fileSize FROM upload WHERE user='" . $_SESSION["username"] . "'");
 
+###Liste mit Checkbox###
 echo '<div class="table-responsive">';
     echo '<table class="table table-striped table-hover">';
 
@@ -28,5 +29,7 @@ echo '<div class="table-responsive">';
 }
     echo "</table>";
 echo "</div>";
+
+
 
 ?>

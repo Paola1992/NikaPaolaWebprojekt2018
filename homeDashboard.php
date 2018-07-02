@@ -6,7 +6,6 @@
  * Time: 12:24
  */
 ?>
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -22,11 +21,8 @@
 </head>
 <body>
 <?php
-
 include "navigation.php";
-
 include "file.php";
-
 ?>
 <div class="container">
     <form action="uploadfileAction.php" method="post"
@@ -50,4 +46,3 @@ include "file.php";
         </div>
 </body>
 </html>
-

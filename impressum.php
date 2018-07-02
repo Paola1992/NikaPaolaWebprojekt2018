@@ -5,10 +5,6 @@
  * Date: 28.05.18
  * Time: 11:58
  */?>
-<?php
-include "session.php";
-?>
-
 
 <!DOCTYPE html>
 <html lang="de">
@@ -19,7 +15,6 @@ include "session.php";
     <!-- Bootstrap -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-
 
     <title>Safe&Send</title>
 
