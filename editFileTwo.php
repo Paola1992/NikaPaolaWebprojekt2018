@@ -38,7 +38,7 @@ else
 {
 
     if (file_exists($oldPath)) {
-        $umbenennen= $dbConnect->exec("UPDATE upload SET filename='$filename' WHERE Filename='$oldFilename'");
+        $umbenennen= $dbConnect->exec("UPDATE upload SET filename='$filename' WHERE filename='$oldFilename'");
         $query= $dbConnect->query($umbenennen);
         #rename ($oldPath, $newPath);
         header('location: homeDashboard.php');
