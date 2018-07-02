@@ -22,32 +22,21 @@ $dateiendung=$pathinfo['extension'];
 $filename = $newFilename.".".$dateiendung;
 
 $dateiname = $newFilename.$username.date('Y-m-d').time().".".$dateiendung;
-echo "Alter Dateiname: ".$oldFilename."<br>";
-echo "Dateiname: ".$dateiname."<br>";
-echo "filename: ".$filename."<br>";
+#echo "Alter Dateiname: ".$oldFilename."<br>";
+#echo "Dateiname: ".$dateiname."<br>";
+#echo "filename: ".$filename."<br>";
 
 $oldPath = "uploads/".$oldFilename; //bisheriger Dateipfad
 $newPath = "uploads/".$dateiname; //Ziel-Dateipfad
 
-if($newFilename == "")
-{
-    echo "Eingabefehler. Bitte Feld korrekt ausfüllen. <a href=\"editFileOne.php\">Zurück</a>";
-    exit;
-}
-else
-{
 
+#Änderung in der Datenbank
     if (file_exists($oldPath)) {
         $umbenennen= $dbConnect->exec("UPDATE upload SET filename='$filename' WHERE filename='$oldFilename'");
         $query= $dbConnect->query($umbenennen);
         #rename ($oldPath, $newPath);
         header('location: homeDashboard.php');
+
     }
 
-    else {
-        echo"Datei existiert nicht";
-        exit;
-    }
-    echo"nichts eingegeben";
-}
 ?>
