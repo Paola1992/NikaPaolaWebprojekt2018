@@ -9,6 +9,8 @@
 <?php
 include "session.php";
 $file = $_GET["varname"];
+echo $file ;
+
 ?>
 
 <!DOCTYPE html>
@@ -36,9 +38,11 @@ include "navigation.php";
         <div class="container">
             <p>Datei umbenennen:</p>
             <?php
+
+
             echo '<form action="editFileTwo.php" method="post">';
-            echo '<input type="text" name="newfile" maxlength="50"></input><br>';
-            echo '<input type="hidden" name="oldfile" value="' . $file . '"/><br>';
+            echo '<input type="text" name="newFilename" maxlength="50"></input><br>';
+            echo '<input type="hidden" name="oldFilename" value="' . $file . '"/><br>';
             echo '<input class="btn btn-primary btn-lg" href="editFileTwo.php" role="button" type="submit" target="self" value="Änderungen übernehmen"/></form>';
             echo "</div>";
             echo "</div>";

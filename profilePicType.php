@@ -3,13 +3,12 @@
  * Created by PhpStorm.
  * User: paolapatino
  * Date: 10.06.18
- * Time: 19:01
+ * Time: 19:02
  */
 ?>
 <?php
 include "session.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -32,29 +31,37 @@ include "navigation.php";
 
 <div class="container">
     <div class="page-header">
-        <h1>Einstellungen <small>Profilbild</small></h1>
+        <h1>Einstellungen
+            <small>profilepicture</small>
+        </h1>
     </div>
     <div class="jumbotron">
         <div class="container">
-            <div class="alert alert-danger" role="alert">Die Datei ist zu groß! Sie darf 5MB nicht überschreiten.</div>
-            <p>Dein aktuelles Profilbild</p>
+            <div class="alert alert-danger" role="alert">Falscher Dateityp! Es sind nur folgende Dateitypen zugelassen:
+                .jpg, .jpeg, .png, .gif
+            </div>
+            <p>Dein aktuelles profilepicture</p>
             <?php
-            ### Profilbild-Anzeige
-            #include "dbConnection.php";
-            $stmt = $dbConnect->query("SELECT profilpicture FROM login WHERE username='".$_SESSION["username"]."'");
+            ### profilepicture-Anzeige
+            #include "connection.php";
+            $stmt = $dbConnect->query("SELECT profilepicture FROM login WHERE username='" . $_SESSION["username"] . "'");
             $row = $stmt->fetch();
-            $profilepicture = '<img src="'.$row['pb'].'" width="80" height="80" class="profile-image img-circle">';
+            $profilepicture = '<img src="' . $row['pb'] . '" width="80" height="80" class="profile-image img-circle">';
             echo $profilepicture;
             ?>
 
 
             <br></br>
-            <!-- Profilbild-Upload -->
-            <p>Lade jetzt ein neues Profilbild hoch</p>
-            <div id="profil">
-                <form action="profilePicAction.php" method="post" enctype="multipart/form-data"> <!-- Dateityp der auszuwählen ist, wird festgelegt-->
+            <!-- profilepicture-Upload -->
 
-                    <input type="file" name="bild">
+
+            <p>Lade jetzt ein neues profilepicture hoch</p>
+
+            <div id="profil">
+                <form action="profilePicAction.php" method="post" enctype="multipart/form-data">
+                    <!-- Dateityp der auszuwählen ist, wird festgelegt-->
+
+                    <input type="file" name="pic">
                     <br>
                     <input type="submit" class="btn btn-primary" name="upload" value="Upload">
                 </form>
@@ -64,5 +71,4 @@ include "navigation.php";
 </div>
 </body>
 </html>
-
 

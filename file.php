@@ -33,13 +33,12 @@ echo '<div class="table-responsive">';
 echo '<table class="table table-striped table-hover">';
 
 while ($row = $stmt2->fetch()) {
-    $displayName = $row['file'];
     $fileName = $row['filename'];
     $fileSize = $row['fileSize'];
     $fileSize = $fileSize/1000000;
     $fileSize = round($fileSize, 2);
     echo "<tr>";
-    echo '<td><a href="uploads/' . $fileName . '">' . $displayName . '</td>';
+    echo '<td><a href="uploads/' . $fileName . '">' . $fileName . '</td>';
     $URL = 'https://mars.iuk.hdm-stuttgart.de/~pp020/uploads/' . $fileName;
     $pathInfo = pathinfo($URL);
     $fileExtension = $pathInfo['extension'];
