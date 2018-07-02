@@ -3,7 +3,7 @@
  * Created by PhpStorm.
  * User: paolapatino
  * Date: 10.06.18
- * Time: 19:01
+ * Time: 19:00
  */
 ?>
 <?php
@@ -36,33 +36,36 @@ include "navigation.php";
     </div>
     <div class="jumbotron">
         <div class="container">
-            <div class="alert alert-danger" role="alert">Die Datei ist zu groß! Sie darf 5MB nicht überschreiten.</div>
             <p>Dein aktuelles Profilbild</p>
             <?php
-            ### Profilbild-Anzeige
-            #include "dbConnection.php";
-            $stmt = $dbConnect->query("SELECT profilpicture FROM login WHERE username='".$_SESSION["username"]."'");
+            $stmt = $dbConnect->query("SELECT profilepicture FROM login WHERE username='".$_SESSION["username"]."'");
             $row = $stmt->fetch();
+
+            ### Profilbild-Anzeige
+
             $profilepicture = '<img src="'.$row['pb'].'" width="80" height="80" class="profile-image img-circle">';
             echo $profilepicture;
             ?>
-
-
             <br></br>
+
             <!-- Profilbild-Upload -->
             <p>Lade jetzt ein neues Profilbild hoch</p>
             <div id="profil">
                 <form action="profilePicAction.php" method="post" enctype="multipart/form-data"> <!-- Dateityp der auszuwählen ist, wird festgelegt-->
 
-                    <input type="file" name="bild">
+                    <input type="file" name="pic">
                     <br>
                     <input type="submit" class="btn btn-primary" name="upload" value="Upload">
                 </form>
             </div>
+
         </div>
     </div>
 </div>
+<br></br>
 </body>
-</html>
 
+
+
+</html>
 
