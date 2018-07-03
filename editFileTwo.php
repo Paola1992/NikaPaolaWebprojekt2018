@@ -22,21 +22,20 @@ $dateiendung=$pathinfo['extension'];
 $filename = $newFilename.".".$dateiendung;
 
 $dateiname = $newFilename.$username.date('Y-m-d').time().".".$dateiendung;
-#echo "Alter Dateiname: ".$oldFilename."<br>";
-#echo "Dateiname: ".$dateiname."<br>";
-#echo "filename: ".$filename."<br>";
+echo "Alter Dateiname: ".$oldFilename."<br>";
+echo "Dateiname: ".$dateiname."<br>";
+echo "filename: ".$filename."<br>";
 
 $oldPath = "uploads/".$oldFilename; //bisheriger Dateipfad
 $newPath = "uploads/".$dateiname; //Ziel-Dateipfad
 
+$query= $dbConnect->exec("UPDATE upload SET filename='$filename' WHERE Filename='$oldFilename'");
 
-#Änderung in der Datenbank
-    if (file_exists($oldPath)) {
-        $umbenennen= $dbConnect->exec("UPDATE upload SET filename='$filename' WHERE filename='$oldFilename'");
-        $query= $dbConnect->query($umbenennen);
-        #rename ($oldPath, $newPath);
-        header('location: homeDashboard.php');
-
-    }
+if ($query > 0){
+    header('location: homeDashboard.php');
+} else {
+    header( "Refresh:5; url=homeDashboard.php", true, 303);
+    echo 'Fehler bei der Freigabe! Automatische weiterleitung in 5 Sek.';
+}
 
 ?>

@@ -68,7 +68,6 @@ include "navigation.php";
 
             ###Inhalt der Datenbank + Download-Funktion + Editier-Funktion + Lösch-Funktion###
 
-
             $stmt2 = $dbConnect->query("SELECT filename, file FROM upload WHERE user='" . $_SESSION["username"] . "'");
 
             echo '<div class="table-responsive">';

@@ -6,7 +6,6 @@
  * Time: 17:47
  */
 
-
 #Datenvolumen Ausgabe
 include "dbConnection.php";
 include "session.php";
@@ -27,34 +26,40 @@ echo '<div class="progress-bar" role="progressbar" aria-valuenow="' . $percent .
 
 
 ###Inhalt der Datenbank + Download-Funktion + Editier-Funktion + Lösch-Funktion###
-$stmt2 = $dbConnect->query("SELECT file, filename, fileSize FROM upload WHERE user='" . $_SESSION["username"] . "'");
+$stmt2 = $dbConnect->query("SELECT id, file, filename, fileSize, status FROM upload WHERE user='" . $_SESSION["username"] . "'");
 
 echo '<div class="table-responsive">';
 echo '<table class="table table-striped table-hover">';
 
 while ($row = $stmt2->fetch()) {
+    $fileID = $row['id'];
+    $displayName = $row['file'];
     $fileName = $row['filename'];
     $fileSize = $row['fileSize'];
     $fileSize = $fileSize/1000000;
     $fileSize = round($fileSize, 2);
+    $fileStatus = $row['status'];
     echo "<tr>";
-    echo '<td><a href="uploads/' . $fileName . '">' . $fileName . '</td>';
-    $URL = 'https://mars.iuk.hdm-stuttgart.de/~pp020/uploads/' . $fileName;
+    echo '<td><a href="uploads/' . $fileName . '">' . $displayName . '</td>';
+    $URL = 'https://mars.iuk.hdm-stuttgart.de/~ng046/publicDownload.php?fileID=' . $fileID;
     $pathInfo = pathinfo($URL);
     $fileExtension = $pathInfo['extension'];
     echo '<td>'.$fileSize.' MB</td>';
     echo '<td>' . $fileExtension . '</td>';
-    echo '<td><a href="download.php?varname=' . $fileName . '" target="_self">Herunterladen</a> </td>';
+    echo '<td><a href="download.php?varname=' . $fileName . '" target="_self">herunterladen</a> </td>';
 
-    echo '<td><a href="editFileOne.php?varname=' . $fileName . '" target="_self">Umbenennen</a></td>';
+    echo '<td><a href="editFileOne.php?varname=' . $fileName . '" target="_self">umbenennen</a></td>';
 
-    echo '<td><a href="deleteFile.php?varname=' . $fileName . '" target="_self">Löschen</a></td>';
-
-    echo '<td><a href="shareAction.php?varname=' . $fileName . '">mit User teilen</a></td>';
+    echo '<td><a href="deleteFile.php?varname=' . $fileName . '" target="_self">löschen</a></td>';
 
     $username = $_SESSION["username"];
-    echo '<td><a href="mailto:?subject=' . $username . ' möchte einen Link mit dir teilen&body=Klicke auf folgenden Link, um die Datei anzusehen: ' . $URL . '" target="_self">via Mail teilen</a></td>';
-    #readfile($URL.$file)
+
+    if ($fileStatus == 1){
+        echo '<td><a href="mailto:?subject=' . $username . ' möchte einen Link mit dir teilen&body=Klicke auf folgenden Link, um die Datei anzusehen: ' . $URL . '" target="_self">teilen</a></td>';
+        echo '<td><a href="removePublic.php?varid=' . $fileID . '" target="_self">Freigabe aufheben</a></td>';
+    } else {
+        echo '<td><a href="setPublic.php?varid=' . $fileID . '" target="_self">Teilen aktivieren</a></td>';
+    }
 
     echo "</tr>";
 }
