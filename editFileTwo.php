@@ -6,8 +6,6 @@
  * Time: 17:46
  */
 
-?>
-<?php
 
 include "dbConnection.php";
 include "session.php";
@@ -22,9 +20,7 @@ $dateiendung=$pathinfo['extension'];
 $filename = $newFilename.".".$dateiendung;
 
 $dateiname = $newFilename.$username.date('Y-m-d').time().".".$dateiendung;
-echo "Alter Dateiname: ".$oldFilename."<br>";
-echo "Dateiname: ".$dateiname."<br>";
-echo "filename: ".$filename."<br>";
+
 
 $oldPath = "uploads/".$oldFilename; //bisheriger Dateipfad
 $newPath = "uploads/".$dateiname; //Ziel-Dateipfad

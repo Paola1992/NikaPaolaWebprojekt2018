@@ -33,19 +33,15 @@ echo '<table class="table table-striped table-hover">';
 
 while ($row = $stmt2->fetch()) {
     $fileID = $row['id'];
-    $displayName = $row['file'];
     $fileName = $row['filename'];
     $fileSize = $row['fileSize'];
     $fileSize = $fileSize/1000000;
     $fileSize = round($fileSize, 2);
     $fileStatus = $row['status'];
     echo "<tr>";
-    echo '<td><a href="uploads/' . $fileName . '">' . $displayName . '</td>';
+    echo '<td><a href="uploads/' . $fileName . '">' . $fileName . '</td>';
     $URL = 'https://mars.iuk.hdm-stuttgart.de/~ng046/publicDownload.php?fileID=' . $fileID;
-    $pathInfo = pathinfo($URL);
-    $fileExtension = $pathInfo['extension'];
     echo '<td>'.$fileSize.' MB</td>';
-    echo '<td>' . $fileExtension . '</td>';
     echo '<td><a href="download.php?varname=' . $fileName . '" target="_self">herunterladen</a> </td>';
 
     echo '<td><a href="editFileOne.php?varname=' . $fileName . '" target="_self">umbenennen</a></td>';
