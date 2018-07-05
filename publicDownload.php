@@ -28,7 +28,7 @@
          header('Pragma: public');
          header('Content-Length: ' . filesize($file));
          readfile($file);
-         header('location: index.php');
+         header('location: homeDashboard.php');
      }
  } else {
      echo 'Keine Berechtigung zum Download.';

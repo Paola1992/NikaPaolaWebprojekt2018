@@ -16,11 +16,11 @@ $stmt->bindparam(':fileID', $fileID);
 $stmt->bindparam(':sharedUser', $sharedUser);
 $stmt->execute();
 
-$anzahlDateien = $stmt->rowCount();
+$allFiles = $stmt->rowCount();
 
 $fileData = $stmt->fetch();
 
-if ($anzahlDateien > 0){
+if ($allFiles > 0){
     $file = 'uploads/'.$fileData['file'];
     $filename = $fileData['filename'];
 

@@ -35,7 +35,7 @@ while ($row = $stmt2->fetch()) {
     echo '<td>'.$fileSize.' MB</td>';
 
     //Buttons für die Weiterleitung der Datei zu Download, Umbennen und Löschen
-    echo '<td><a href="download.php?fileID=' . $fileID . '" target="_self">herunterladen</a> </td>';
+    echo '<td><a href="selfDownload.php?fileID=' . $fileID . '" target="_self">herunterladen</a> </td>';
 
     echo '<td><a href="editFilename.php?fileID=' . $fileID . '&&oldFilename=' . $fileName . '" target="_self">umbenennen</a></td>';
 
@@ -43,7 +43,7 @@ while ($row = $stmt2->fetch()) {
 
     $username = $_SESSION["username"];
 
-    //Teilen der Datei via Email - Wenn Teilen aktiviert ist (Status 1) wird "Teilen deaktiviert" angezeigt, wenn nicht dann kann man das Teilen aktivieren (Status 0)
+    //Teilen der Datei via Email - Wenn Teilen aktiviert ist (Status 1) wird "Teilen deaktiviert" (removePublic.php) angezeigt, wenn nicht dann kann man das Teilen aktivieren durch setPublic.php (Status 0)
     if ($fileStatus == 1){
         echo '<td><a href="mailto:?subject=' . $username . ' möchte einen Link mit dir teilen&body=Klicke auf folgenden Link, um die Datei anzusehen: ' . $URL . '" target="_self">teilen</a></td>';
         echo '<td><a href="removePublic.php?varid=' . $fileID . '" target="_self">E-Mail Teilen deaktivieren</a></td>';
@@ -52,7 +52,7 @@ while ($row = $stmt2->fetch()) {
     }
 
     //Teilen mit anderen Nutzern von Safe & Send
-    echo '<td><a href="share.php?fileID=' . $fileID  . '&&fileName=' . $fileName . '&&fileRealName=' . $fileRealName . '" target="_self">Für Safe&Send-Nutzer freigeben</a></td>';
+    echo '<td><a href="userShare.php?fileID=' . $fileID  . '&&fileName=' . $fileName . '&&fileRealName=' . $fileRealName . '" target="_self">Für Safe&Send-Nutzer freigeben</a></td>';
 
     echo "</tr>";
 }
@@ -74,7 +74,7 @@ while ($row2 = $stmt3->fetch()) {
 
     echo "<tr>";
     echo '<td><a href="uploads/' . $shareFileName . '">' . $shareFileName . '</td>';
-    echo '<td><a href="privateDownload.php?fileID=' . $shareFileId . '&&sharedUser=' . $_SESSION["username"] . '" target="_self">herunterladen</a> </td>';
+    echo '<td><a href="userShareDownload.php?fileID=' . $shareFileId . '&&sharedUser=' . $_SESSION["username"] . '" target="_self">herunterladen</a> </td>';
 
     echo "</tr>";
 }

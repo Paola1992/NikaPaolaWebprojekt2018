@@ -17,18 +17,16 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
-
     <title>Registrierung </title>
 </head>
 <body>
 <?php
 include "indexNav.php";
 ?>
-<!-- Registrieungsformular -->
 
 <h1 class="margin-base-vertical">Jetzt registrieren</h1>
 
-<!--Warnung wegen Email oder Passwort-->
+<!--Warnung Passwort zu kurz-->
 <div class="alert alert-danger" role="alert">Das Passwort ist zu kurz! Bitte versuche es erneut</div>
 
 <div class="col-sm-6">

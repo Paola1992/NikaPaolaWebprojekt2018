@@ -14,6 +14,6 @@ $stmt = $dbConnect->prepare("DELETE FROM share WHERE id=:fileID");
 $stmt->bindparam(':fileID', $fileID);
 $stmt->execute();
 
-header('location: shareDashboard.php');
+header('location: userShareDashboard.php');
 
 ?>

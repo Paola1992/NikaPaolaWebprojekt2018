@@ -27,14 +27,14 @@ $fileName = $_GET["fileName"];
 include "dashboardNav.php";
 ?>
 <div>
-    <form action="shareAction.php" method="post">Mit wem möchtest du die Datei teilen?<br>
+    <form action="userShareAction.php" method="post">Mit wem möchtest du die Datei teilen?<br>
         <input type="text" name="username" style="color:black"/>
 
         <?php echo '<input type="hidden" name="fileID" value="' . $fileID . '"/>'; ?>
         <?php echo '<input type="hidden" name="fileName" value="' . $fileName . '"/>'; ?>
         <?php echo '<input type="hidden" name="fileRealName" value="' . $fileRealName . '"/>'; ?>
 
-        <input class="btn btn-primary btn-lg" href="shareAction.php" role="button" type="submit" value="Jetzt teilen"/>
+        <input class="btn btn-primary btn-lg" href="userShareAction.php" role="button" type="submit" value="Jetzt teilen"/>
     </form>
 
 </div>

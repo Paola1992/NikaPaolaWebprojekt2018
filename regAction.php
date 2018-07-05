@@ -7,10 +7,10 @@
  */
 
 
-//Importieren der DB Verbindungsdatei
+//Verbindung zur Datenbank wird hergestellt
 include("dbConnection.php");
 
-//Definieren der Variablen der übergebenen Inhalte aus dem Registrieungsfeld
+//Definieren der Variablen der übergebenen Inhalte aus dem Registrierungsfeld
 $username = $_POST["username"];
 $email = $_POST["email"];
 $passwordOne = $_POST["passwordOne"];
@@ -24,7 +24,6 @@ $passwordTwo = $_POST["passwordTwo"];
   }
 
   else {
-
       if (strlen($passwordOne) <= 5) {
           header("Location:regErrorShortPassword.php");
       } else {
@@ -36,7 +35,6 @@ $passwordTwo = $_POST["passwordTwo"];
 
 //Verschlüsseln des Passworts
           $hashedPassword = hashPassword($passwordOne, $username);
-
 
 //Prüfung ob Benutzer bereits in der Datanbank existiert
           $counter = 0;
@@ -55,8 +53,6 @@ $passwordTwo = $_POST["passwordTwo"];
               header("Location:regError.php");
           }
 
-
-
           //Wenn erfolgreich wird der Benutzer eingeloggt
                   if ($insertUser == true)
                   {
@@ -65,14 +61,6 @@ $passwordTwo = $_POST["passwordTwo"];
                   } else {
                       echo "Fehler beim Speichern des Benutzernames. <a href=\"registration.php\">Zurück</a>";
                   }
-
-
-
-
-
-
-
-
   }
 
   }

@@ -40,7 +40,7 @@ while ($row = $stmt->fetch()) {
     echo "<tr>";
     echo '<td>'.$fileName.'</td>';
     echo '<td>'.$sharedUser.'</td>';
-    echo '<td><a href="removeShare.php?fileID=' . $fileID . '" target="_self">Freigabe deaktivieren</a> </td>';
+    echo '<td><a href="userShareRemove.php?fileID=' . $fileID . '" target="_self">Freigabe deaktivieren</a> </td>';
 
     echo "</tr>";
 }
