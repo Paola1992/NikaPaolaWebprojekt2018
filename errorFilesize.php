@@ -17,32 +17,16 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
-
     <title>Upload</title>
 </head>
 <body>
 <?php
 include "dashboardNav.php";
 ?>
-<!-- Registrieungsformular -->
 
-<div class="cover-container">
-    <div class="masthead clearfix">
-        <div class="inner">
-            <h3 class="masthead-brand">Safe & Send</h3>
-            <nav>
-                <ul class="nav masthead-nav">
-                    <li class="active"><a href="indexNav.php">Home</a></li>
-                    <li><a href="login.php">Login</a></li>
-                    <li><a href="registration.php">Registrieren</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-</div>
 <h1 class="margin-base-vertical">Jetzt Datei Hochladen</h1>
 
-<!--Warnung da Datei bereits existiert-->
+<!--Warnung da Datei zu groß-->
 <div class="alert alert-danger" role="alert">Datei zu groß</div>
 
 <div class="col-sm-6">

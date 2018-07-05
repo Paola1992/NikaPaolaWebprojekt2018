@@ -16,7 +16,6 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
-
     <title>Upload</title>
 </head>
 <body>
@@ -37,9 +36,7 @@ include "dashboardNav.php";
             <label for="exampleInputFile">Dateien hochladen</label>
             <input type="file" id="uploadFile" name="file">
         </div>
-        <button class="btn  btn-primary" type="submit">
-            <!--<span class="glyphicons glyphicons-cloud-upload"
-                  aria-hidden="true"></span> (icon einfügen, ging aber nicht)--> Datei uploaden
+        <button class="btn  btn-primary" type="submit">Datei uploaden
         </button>
     </form>
 </div>

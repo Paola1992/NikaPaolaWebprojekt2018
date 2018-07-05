@@ -62,6 +62,5 @@ $passwordTwo = $_POST["passwordTwo"];
                       echo "Fehler beim Speichern des Benutzernames. <a href=\"registration.php\">Zurück</a>";
                   }
   }
-
   }
   ?>

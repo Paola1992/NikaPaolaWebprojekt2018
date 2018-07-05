@@ -18,7 +18,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
 
-    <title>Registrierung </title>
+    <title>Registrierung</title>
 </head>
 <body>
 <?php

@@ -21,7 +21,7 @@ $oldFilename = $_GET["oldFilename"];
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
-    <title>Safe&Send</title>
+    <title>Save&ampSend</title>
 
 </head>
 <body>
