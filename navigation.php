@@ -35,6 +35,9 @@
                     <a class="navigation-link" href="homeDashboard.php">Home</a>
                 </li>
                 <li class="nav-item">
+                    <a class="navigation-link" href="shareDashboard.php">Freigaben verwalten</a>
+                </li>
+                <li class="nav-item">
                     <a class="navigation-link" href="logout.php">Ausloggen</a>
                 </li>
                 <li class="nav-item">

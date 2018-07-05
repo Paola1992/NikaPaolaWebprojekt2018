@@ -5,6 +5,10 @@
  * Date: 04.05.18
  * Time: 12:24
  */
+
+$fileID = $_GET["fileID"];
+$fileRealName = $_GET["fileRealName"];
+$fileName = $_GET["fileName"];
 ?>
 
 <!DOCTYPE html>
@@ -25,13 +29,15 @@ include "navigation.php";
 <div>
     <form action="shareAction.php" method="post">Mit wem möchtest du die Datei teilen?<br>
         <input type="text" name="username" style="color:black"/>
+
+        <?php echo '<input type="hidden" name="fileID" value="' . $fileID . '"/>'; ?>
+        <?php echo '<input type="hidden" name="fileName" value="' . $fileName . '"/>'; ?>
+        <?php echo '<input type="hidden" name="fileRealName" value="' . $fileRealName . '"/>'; ?>
+
         <input class="btn btn-primary btn-lg" href="shareAction.php" role="button" type="submit" value="Jetzt teilen"/>
     </form>
-    <?php
-    include "shareFile.php";
-    ?>
+
 </div>
 
 </body>
 </html>
-

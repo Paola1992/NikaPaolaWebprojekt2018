@@ -31,8 +31,6 @@ include "file.php";
     <main>
         <div class="inner cover">
             <div class="container">
-                <div class="row">
-                    <?php if(isset($_GET['msg']) and $_GET['msg'] == '4'){ echo '<div class="col-sm-12"><div class="alert alert-success">Löschung erfolgreich</div></div> ';} ?>
                 <div class="col-lg-8 col-sm-8">
                     <form enctype="multipart/form-data" class="form-signin" method="post" action="uploadfileAction.php">
                         <h2 class="form-signin-heading">Dateien hochladen</h2>
@@ -43,7 +41,6 @@ include "file.php";
                         <button class="btn  btn-primary" type="submit">Datei upload en
                         </button>
                     </form>
-                </div>
                 </div>
             </div>
         </div>
