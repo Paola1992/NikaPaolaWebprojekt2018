@@ -31,7 +31,7 @@ while ($row = $stmt2->fetch()) {
     $fileStatus = $row['status'];
     echo "<tr>";
     echo '<td><a href="uploads/' . $fileName . '">' . $fileName . '</td>';
-    $URL = 'https://mars.iuk.hdm-stuttgart.de/~ng046/publicDownload.php?fileID=' . $fileID;
+    $URL = 'https://mars.iuk.hdm-stuttgart.de/~ng046/mailShareDownload.php?fileID=' . $fileID;
     echo '<td>'.$fileSize.' MB</td>';
 
     //Buttons für die Weiterleitung der Datei zu Download, Umbennen und Löschen
@@ -46,9 +46,9 @@ while ($row = $stmt2->fetch()) {
     //Teilen der Datei via Email - Wenn Teilen aktiviert ist (Status 1) wird "Teilen deaktiviert" (removePublic.php) angezeigt, wenn nicht dann kann man das Teilen aktivieren durch setPublic.php (Status 0)
     if ($fileStatus == 1){
         echo '<td><a href="mailto:?subject=' . $username . ' möchte einen Link mit dir teilen&body=Klicke auf folgenden Link, um die Datei anzusehen: ' . $URL . '" target="_self">teilen</a></td>';
-        echo '<td><a href="removePublic.php?varid=' . $fileID . '" target="_self">E-Mail Teilen deaktivieren</a></td>';
+        echo '<td><a href="mailShareRemove.php?varid=' . $fileID . '" target="_self">E-Mail Teilen deaktivieren</a></td>';
     } else {
-        echo '<td><a href="setPublic.php?varid=' . $fileID . '" target="_self">E-Mail Teilen aktivieren</a></td>';
+        echo '<td><a href="mailShareSet.php?varid=' . $fileID . '" target="_self">E-Mail Teilen aktivieren</a></td>';
     }
 
     //Teilen mit anderen Nutzern von Safe & Send
@@ -80,6 +80,5 @@ while ($row2 = $stmt3->fetch()) {
 }
 echo "</table>";
 echo "</div>";
-
 
 ?>
