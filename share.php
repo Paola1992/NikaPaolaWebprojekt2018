@@ -24,7 +24,7 @@ $fileName = $_GET["fileName"];
 </head>
 <body>
 <?php
-include "navigation.php";
+include "dashboardNav.php";
 ?>
 <div>
     <form action="shareAction.php" method="post">Mit wem möchtest du die Datei teilen?<br>

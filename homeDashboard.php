@@ -21,8 +21,8 @@
 </head>
 <body>
 <?php
-include "navigation.php";
-include "file.php";
+include "dashboardNav.php";
+include "dashboardFiles.php";
 ?>
 <div class="container">
     <form action="uploadfileAction.php" method="post"

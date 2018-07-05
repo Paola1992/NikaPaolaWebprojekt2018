@@ -14,7 +14,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
-
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 
@@ -22,12 +21,10 @@
 </head>
 <body>
 <?php
-include "navigationIndex.php";
+include "indexNav.php";
 ?>
 <div class="site-wrapper">
-
     <div class="site-wrapper-inner">
-
         <div class="cover-container">
             <div class="inner cover">
                 <h1 class="cover-heading">Einloggen</h1>
@@ -39,7 +36,8 @@ include "navigationIndex.php";
                     Passwort<br>
                     <input type="password" name="password" maxlength="20" style="color:black"/><br>
                     <br>
-                    <input class="btn btn-primary btn-lg" href="homeDashboard.php" role="button" type="submit" value="Einloggen"/>
+                    <input class="btn btn-primary btn-lg" href="homeDashboard.php" role="button" type="submit"
+                           value="Einloggen"/>
                 </form>
                 <br>Noch kein Mitglied? <a href="registration.php" style="color:grey"> Jetzt Registrieren </a>
             </div>

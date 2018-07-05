@@ -23,7 +23,7 @@
 </head>
 <body>
 <?php
-include "navigationIndex.php";
+include "indexNav.php";
 ?>
 
 <!-- Registrieungsformular -->

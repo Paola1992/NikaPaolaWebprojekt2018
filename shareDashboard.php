@@ -23,7 +23,7 @@
 <?php
 include "dbConnection.php";
 include "session.php";
-include "navigation.php";
+include "dashboardNav.php";
 
 
 ###Inhalt der Datenbank + Download-Funktion + Editier-Funktion + Lösch-Funktion###

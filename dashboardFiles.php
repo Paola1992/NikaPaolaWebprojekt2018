@@ -6,7 +6,7 @@
  * Time: 17:47
  */
 
-#Datenvolumen Ausgabe
+// Verbindung zu Datenbank und Session
 include "dbConnection.php";
 include "session.php";
 
@@ -14,24 +14,12 @@ $username = $_SESSION["username"];
 
 echo '<h1>Eigene Dateien</h1>';
 
-$stmtFileSize = $dbConnect->query("SELECT fileSize FROM upload WHERE user= '.$username.'");
-$rowFileSize = $stmtFileSize->fetchAll(PDO::FETCH_COLUMN, 0);
-$totalSize = array_sum($rowFileSize);
-$dataVolume = 500 - ($totalSize / 1000000);
-$percent = ($totalSize / 5000000);
-$percent = round($percent, 0, PHP_ROUND_HALF_DOWN);
-
-echo "Ihr Datenvolumen beträgt noch:&nbsp" . round($dataVolume, 2) . "MB";
-
-echo '<div class="progress">';
-echo '<div class="progress-bar" role="progressbar" aria-valuenow="' . $percent . '%" aria-valuemin="0" aria-valuemax="100" style="width:' . $percent . '%;">' . $percent . '%</div></div>';
-
-
-###Inhalt der Datenbank + Download-Funktion + Editier-Funktion + Lösch-Funktion###
+// Alle Dateien die der User selbst hochgeladen hat, werden angezeigt
 $stmt2 = $dbConnect->query("SELECT id, file, filename, fileSize, status FROM upload WHERE user='" . $_SESSION["username"] . "'");
 
 echo '<div class="table-responsive">';
 echo '<table class="table table-striped table-hover">';
+
 
 while ($row = $stmt2->fetch()) {
     $fileID = $row['id'];
@@ -45,22 +33,26 @@ while ($row = $stmt2->fetch()) {
     echo '<td><a href="uploads/' . $fileName . '">' . $fileName . '</td>';
     $URL = 'https://mars.iuk.hdm-stuttgart.de/~ng046/publicDownload.php?fileID=' . $fileID;
     echo '<td>'.$fileSize.' MB</td>';
+
+    //Buttons für die Weiterleitung der Datei zu Download, Umbennen und Löschen
     echo '<td><a href="download.php?fileID=' . $fileID . '" target="_self">herunterladen</a> </td>';
 
-    echo '<td><a href="editFileOne.php?fileID=' . $fileID . '&&oldFilename=' . $fileName . '" target="_self">umbenennen</a></td>';
+    echo '<td><a href="editFilename.php?fileID=' . $fileID . '&&oldFilename=' . $fileName . '" target="_self">umbenennen</a></td>';
 
     echo '<td><a href="deleteFile.php?fileID=' . $fileID . '&&file=' . $fileRealName . '" target="_self">löschen</a></td>';
 
     $username = $_SESSION["username"];
 
+    //Teilen der Datei via Email - Wenn Teilen aktiviert ist (Status 1) wird "Teilen deaktiviert" angezeigt, wenn nicht dann kann man das Teilen aktivieren (Status 0)
     if ($fileStatus == 1){
         echo '<td><a href="mailto:?subject=' . $username . ' möchte einen Link mit dir teilen&body=Klicke auf folgenden Link, um die Datei anzusehen: ' . $URL . '" target="_self">teilen</a></td>';
-        echo '<td><a href="removePublic.php?varid=' . $fileID . '" target="_self">Teilen deaktivieren</a></td>';
+        echo '<td><a href="removePublic.php?varid=' . $fileID . '" target="_self">E-Mail Teilen deaktivieren</a></td>';
     } else {
-        echo '<td><a href="setPublic.php?varid=' . $fileID . '" target="_self">Teilen aktivieren</a></td>';
+        echo '<td><a href="setPublic.php?varid=' . $fileID . '" target="_self">E-Mail Teilen aktivieren</a></td>';
     }
 
-    echo '<td><a href="share.php?fileID=' . $fileID  . '&&fileName=' . $fileName . '&&fileRealName=' . $fileRealName . '" target="_self">Für Nutzer freigeben</a></td>';
+    //Teilen mit anderen Nutzern von Safe & Send
+    echo '<td><a href="share.php?fileID=' . $fileID  . '&&fileName=' . $fileName . '&&fileRealName=' . $fileRealName . '" target="_self">Für Safe&Send-Nutzer freigeben</a></td>';
 
     echo "</tr>";
 }

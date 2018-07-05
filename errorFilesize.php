@@ -22,7 +22,7 @@
 </head>
 <body>
 <?php
-include "navigation.php";
+include "dashboardNav.php";
 ?>
 <!-- Registrieungsformular -->
 
@@ -32,7 +32,7 @@ include "navigation.php";
             <h3 class="masthead-brand">Safe & Send</h3>
             <nav>
                 <ul class="nav masthead-nav">
-                    <li class="active"><a href="navigationIndex.php">Home</a></li>
+                    <li class="active"><a href="indexNav.php">Home</a></li>
                     <li><a href="login.php">Login</a></li>
                     <li><a href="registration.php">Registrieren</a></li>
                 </ul>

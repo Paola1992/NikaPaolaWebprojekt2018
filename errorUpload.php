@@ -21,7 +21,7 @@
 <body>
 
 <?php
-include "navigation.php";
+include "dashboardNav.php";
 ?>
 
 <h1 class="margin-base-vertical">Jetzt Datei Hochladen</h1>

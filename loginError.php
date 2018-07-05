@@ -22,7 +22,7 @@
 </head>
 <body>
 <?php
-include "navigationIndex.php";
+include "indexNav.php";
 ?>
 
 <!--Warnung wegen Fehler bei Benutzername/Passwort-->

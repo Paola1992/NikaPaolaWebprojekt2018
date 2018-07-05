@@ -6,7 +6,6 @@
  * Time: 17:45
  */
 
-
 include "session.php";
 $fileID = $_GET["fileID"];
 $oldFilename = $_GET["oldFilename"];
@@ -28,9 +27,10 @@ $oldFilename = $_GET["oldFilename"];
 <body>
 
 <?php
-include "navigation.php";
+include "dashboardNav.php";
 ?>
 
+<!-- Umbenennungsformular wird erstellt und leitet weiter auf editFilenameAction.php -->
 <div class="container">
     <div class="jumbotron">
         <div class="container">
@@ -38,11 +38,11 @@ include "navigation.php";
             <?php
 
 
-            echo '<form action="editFileTwo.php" method="post">';
+            echo '<form action="editFilenameAction.php" method="post">';
             echo '<input type="text" name="newFilename" maxlength="50"/><br>';
             echo '<input type="hidden" name="fileID" value="' . $fileID . '"/><br>';
             echo '<input type="hidden" name="oldFilename" value="' . $oldFilename . '"/><br>';
-            echo '<input class="btn btn-primary btn-lg" href="editFileTwo.php" role="button" type="submit" target="self" value="Änderungen übernehmen"/></form>';
+            echo '<input class="btn btn-primary btn-lg" href="editFilenameAction.php" role="button" type="submit" target="self" value="Änderungen übernehmen"/></form>';
             echo "</div>";
             echo "</div>";
 
