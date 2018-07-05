@@ -25,20 +25,22 @@ include "dashboardNav.php";
 include "dashboardFiles.php";
 ?>
 <div class="container">
-    <form action="uploadfileAction.php" method="post"
+    <form action="uploadAction.php" method="post"
           enctype="multipart/form-data">
     </form>
     <main>
+
+        //Upload Fenster
         <div class="inner cover">
             <div class="container">
                 <div class="col-lg-8 col-sm-8">
-                    <form enctype="multipart/form-data" class="form-signin" method="post" action="uploadfileAction.php">
+                    <form enctype="multipart/form-data" class="form-signin" method="post" action="uploadAction.php">
                         <h2 class="form-signin-heading">Dateien hochladen</h2>
                         <div class="form-group">
                             <label for="exampleInputFile">Dateien hochladen</label>
                             <input type="file" id="file" name="file">
                         </div>
-                        <button class="btn  btn-primary" type="submit">Datei uploaden
+                        <button class="btn  btn-primary" type="submit">Jetzt hochladen
                         </button>
                     </form>
                 </div>

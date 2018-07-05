@@ -30,7 +30,7 @@ include "dashboardNav.php";
 <div class="alert alert-danger" role="alert">Fehler beim Hochladen der Datei</div>
 
 <div class="col-sm-6">
-    <form class="form-signin" method="post" action="uploadfileAction.php">
+    <form class="form-signin" method="post" action="uploadAction.php">
         <h2 class="form-signin-heading">Dateien uploaden</h2>
         <div class="form-group">
             <label for="exampleInputFile">Dateien hochladen</label>
