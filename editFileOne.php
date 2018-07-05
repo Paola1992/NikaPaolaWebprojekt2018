@@ -5,8 +5,8 @@
  * Date: 10.06.18
  * Time: 17:45
  */
-?>
-<?php
+
+
 include "session.php";
 $fileID = $_GET["fileID"];
 $oldFilename = $_GET["oldFilename"];
@@ -21,7 +21,6 @@ $oldFilename = $_GET["oldFilename"];
     <!-- Bootstrap -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-
 
     <title>Safe&Send</title>
 
