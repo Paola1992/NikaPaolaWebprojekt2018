@@ -56,7 +56,7 @@ $passwordTwo = $_POST["passwordTwo"];
           //Wenn erfolgreich wird der Benutzer eingeloggt
                   if ($insertUser == true)
                   {
-                      header('Location:homeDashboard.php');
+                      header('Location:index.php');
                       exit;
                   } else {
                       echo "Fehler beim Speichern des Benutzernames. <a href=\"registration.php\">Zurück</a>";
