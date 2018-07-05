@@ -49,9 +49,7 @@
             <label for="exampleInputFile">Dateien hochladen</label>
             <input type="file" id="uploadFile" name="file">
         </div>
-        <button class="btn  btn-primary" type="submit">
-            <!--<span class="glyphicons glyphicons-cloud-upload"
-                  aria-hidden="true"></span> (icon einfügen, ging aber nicht)--> Datei uploaden
+        <button class="btn  btn-primary" type="submit"> Datei uploaden
         </button>
     </form>
 </div>

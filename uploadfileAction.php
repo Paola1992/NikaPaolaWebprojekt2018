@@ -46,7 +46,7 @@ if ($dataVolume > 0) {
         {
             if ($fileError === 0) {
                 //Überprüfung ob Datei größer 5 MB
-                if ($fileSize <= 50000000)
+                if ($fileSize <= 500000)
                 {
                     $fileNameNew = basename($fileName);
                     $fileDestination = "uploads/".$fileNameNew;
