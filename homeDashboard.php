@@ -38,7 +38,7 @@ include "file.php";
                             <label for="exampleInputFile">Dateien hochladen</label>
                             <input type="file" id="file" name="file">
                         </div>
-                        <button class="btn  btn-primary" type="submit">Datei upload en
+                        <button class="btn  btn-primary" type="submit">Datei uploaden
                         </button>
                     </form>
                 </div>

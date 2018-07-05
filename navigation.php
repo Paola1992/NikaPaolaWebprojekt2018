@@ -40,17 +40,6 @@
                 <li class="nav-item">
                     <a class="navigation-link" href="logout.php">Ausloggen</a>
                 </li>
-                <li class="nav-item">
-                    <a class="navigation-link" href="#">Einstellungen</a>
-                    <ul class="dropdown-menu">
-
-                        <li><a href="#">Passwort ändern</a></li>
-                        <li><a href="changeProfilePic.php">Profilbild ändern</a></li>
-                        <li><a href="#">Account löschen</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="logout.php">Logout</a></li>
-                    </ul>
-                </li>
             </ul>
         </div>
     </div>

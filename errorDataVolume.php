@@ -19,22 +19,11 @@
     <title>Upload</title>
 </head>
 <body>
-
+<?php
+include "navigation.php";
+?>
 <!-- Registrieungsformular -->
-    <div class="cover-container">
-        <div class="masthead clearfix">
-            <div class="inner">
-                <h3 class="masthead-brand">Safe & Send</h3>
-                <nav>
-                    <ul class="nav masthead-nav">
-                        <li class="active"><a href="navigationIndex.php">Home</a></li>
-                        <li><a href="login.php">Login</a></li>
-                        <li><a href="registration.php">Registrieren</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
+
     <h1 class="margin-base-vertical">Jetzt Datei Hochladen</h1>
 
 <!--Warnung wegen Daten Volumen-->

@@ -21,7 +21,9 @@
     <title>Upload</title>
 </head>
 <body>
-
+<?php
+include "navigation.php";
+?>
 <!-- Registrieungsformular -->
 
 <div class="cover-container">
@@ -30,7 +32,7 @@
             <h3 class="masthead-brand">Safe & Send</h3>
             <nav>
                 <ul class="nav masthead-nav">
-                    <li class="active"><a href="index.php">Home</a></li>
+                    <li class="active"><a href="navigationIndex.php">Home</a></li>
                     <li><a href="login.php">Login</a></li>
                     <li><a href="registration.php">Registrieren</a></li>
                 </ul>
