@@ -22,6 +22,7 @@
 <body>
 
 <!-- NAVIGATION-->
+
 <nav class="navbar navbar-expand-md navbar-left navbar-dark bg-dark sticky-top">
     <div class="container-fluid">
         <a class="navbar-brand" href="index.php"><img
@@ -29,16 +30,19 @@
                     height="80"
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-
-                <li class="nav-item"><a class="navigation-link" href="index.php">Home</a></li>
-                <li class="nav-item"><a class="navigation-link" href="login.php">Einloggen</a></li>
-                <li class="nav-item"><a class="navigation-link" href="registration.php">Registrieren</a></li>
+                <li class="nav-item">
+                    <a class="navigation-link" href="index.php">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navigation-link" href="login.php">Einloggen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="navigation-link" href="registration.php">Registrieren</a>
+                </li>
             </ul>
         </div>
     </div>
