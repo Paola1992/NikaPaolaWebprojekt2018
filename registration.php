@@ -1,7 +1,7 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: paolapatino
+ * User: nikagruenen
  * Date: 20.04.18
  * Time: 18:58
  */
@@ -22,6 +22,7 @@
     <title>Registrierung</title>
 </head>
 <body>
+
 <?php
 include "indexNav.php";
 ?>

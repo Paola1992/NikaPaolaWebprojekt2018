@@ -30,7 +30,6 @@ include "dashboardFiles.php";
     </form>
     <main>
 
-        //Upload Fenster
         <div class="inner cover">
             <div class="container">
                 <div class="col-lg-8 col-sm-8">
