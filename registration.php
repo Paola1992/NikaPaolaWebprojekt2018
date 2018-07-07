@@ -54,7 +54,7 @@ include "indexNav.php";
                             <label for="passwordTwo">Passwort wiederholen</label>
                             <input type="password" class="form-control" name="passwordTwo">
                         </div>
-                        <button type="submit" class="btn btn-primary">Senden</button>
+                        <button type="submit" class="btn btn-primary">Jetzt Registrieren</button>
                     </form>
                 </div>
             </div>
