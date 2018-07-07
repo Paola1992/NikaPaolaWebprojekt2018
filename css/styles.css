@@ -84,7 +84,7 @@ font-size: 135%;
     padding: 0.5rem 1rem;
     display: inline-block;
     color: rgba(255, 255, 255, 0.5);
-    padding-right: 0.5 rem;
+    padding-right: 0.5rem;
 }
 
 .cover-container {
@@ -102,4 +102,6 @@ form {
 input {
     padding: 10px;
 }
+
+
 

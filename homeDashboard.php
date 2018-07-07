@@ -11,6 +11,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--Responsive-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -29,6 +30,8 @@ include "dashboardFiles.php";
           enctype="multipart/form-data">
     </form>
     <main>
+
+        <!--Datei Upload - Formular (eigentlicher Vorgang in uploadAction.php)-->
 
         <div class="inner cover">
             <div class="container">

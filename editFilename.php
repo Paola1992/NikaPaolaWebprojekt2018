@@ -31,21 +31,16 @@ include "dashboardNav.php";
 ?>
 
 <!-- Umbenennungsformular wird erstellt und leitet weiter auf editFilenameAction.php -->
-<div class="container">
     <div class="jumbotron">
         <div class="container">
-            <p>Datei umbenennen:</p>
+            <h1 class="margin-base-vertical">Wie möchtest du die Datei umbenennen?</h1>
             <?php
-
-
             echo '<form action="editFilenameAction.php" method="post">';
             echo '<input type="text" name="newFilename" maxlength="50"/><br>';
             echo '<input type="hidden" name="fileID" value="' . $fileID . '"/><br>';
             echo '<input type="hidden" name="oldFilename" value="' . $oldFilename . '"/><br>';
-            echo '<input class="btn btn-primary btn-lg" href="editFilenameAction.php" role="button" type="submit" target="self" value="Änderungen übernehmen"/></form>';
+            echo '<input class="btn btn-primary btn-lg" href="editFilenameAction.php" role="button" type="submit" target="self" value="Jetzt umbenennen"/></form>';
             echo "</div>";
-            echo "</div>";
-
             ?>
 
         </div>

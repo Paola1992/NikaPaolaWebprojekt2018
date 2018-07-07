@@ -23,7 +23,6 @@ $newFilename = $newFilename.".".$fileExtension;
 
 // Name der Datei wird in beiden Tabellen geändert
 $query1= $dbConnect->exec("UPDATE upload SET filename='$newFilename' WHERE id='$fileID'");
-
 $query2= $dbConnect->exec("UPDATE share SET filename='$newFilename' WHERE originalid='$fileID'");
 
     header('location: homeDashboard.php');

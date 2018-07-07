@@ -12,7 +12,7 @@ include "session.php";
 
 $username = $_SESSION["username"];
 
-echo '<h1>Eigene Dateien</h1>';
+echo '<h1 class="margin-base-vertical">Eigene Dateien</h1>';
 
 // Alle Dateien die der User selbst hochgeladen hat, werden angezeigt
 $stmt2 = $dbConnect->query("SELECT id, file, filename, fileSize, status FROM upload WHERE user='" . $_SESSION["username"] . "'");
@@ -51,7 +51,7 @@ while ($row = $stmt2->fetch()) {
         echo '<td><a href="mailShareSet.php?varid=' . $fileID . '" target="_self">E-Mail Teilen aktivieren</a></td>';
     }
 
-    //Teilen mit anderen Nutzern von Safe & Send
+    //Teilen mit anderen Nutzern von Save & Send
     echo '<td><a href="userShare.php?fileID=' . $fileID  . '&&fileName=' . $fileName . '&&fileRealName=' . $fileRealName . '" target="_self">Für Safe&Send-Nutzer freigeben</a></td>';
 
     echo "</tr>";
@@ -59,9 +59,9 @@ while ($row = $stmt2->fetch()) {
 echo "</table>";
 echo "</div>";
 
-echo '<h1>Für mich freigegebene Dateien</h1>';
+echo '<h1 class="margin-base-vertical">Für mich freigegebene Dateien</h1>';
 
-###Inhalt der Datenbank + Download-Funktion + Editier-Funktion + Lösch-Funktion###
+//Inhalt der Datenbank + Download-Funktion + Editier-Funktion + Lösch-Funktion
 $stmt3 = $dbConnect->query("SELECT id, username, filename FROM share WHERE shareduser='" . $_SESSION["username"] . "'");
 
 echo '<div class="table-responsive">';

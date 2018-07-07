@@ -8,7 +8,6 @@
 
 
 // Verbindung zur Datenbank wird hergestellt
-
 include "dbConnection.php";
 $fileID = $_GET["fileID"];
 $file = $_GET["file"];

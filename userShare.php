@@ -16,13 +16,16 @@ $fileName = $_GET["fileName"];
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+
     <title>Safe&Send</title>
 </head>
 <body>
+
 <?php
 include "dashboardNav.php";
 ?>
