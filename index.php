@@ -27,7 +27,7 @@ include "indexNav.php";
 ?>
 <div class="cover-container">
     <div class="logo">
-        <img src="https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/logo/LogoSaveAndSendGrau.svg" width="500" height="500"
+        <img src="https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/logo/LogoSaveAndSendGrau.svg" width="300" height="300"
              class="d-inline-block align-top" alt="">
         <p class="lead">Wir machen sicheres Sharing Service für jedermann verfügbar. Melde dich bei Safe&Send an</p>
         <p class="lead">

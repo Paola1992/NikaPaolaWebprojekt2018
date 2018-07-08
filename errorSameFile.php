@@ -23,7 +23,7 @@
 <?php
 include "dashboardNav.php";
 ?>
-<!-- Registrieungsformular -->
+
 
 <h1 class="margin-base-vertical">Jetzt Datei Hochladen</h1>
 

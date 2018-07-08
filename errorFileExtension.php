@@ -21,9 +21,10 @@
 </head>
 <body>
 
-<!-- Registrieungsformular -->
+
 <?php
 include "dashboardNav.php";
+include "uploadAction.php";
 ?>
 <h1 class="margin-base-vertical">Jetzt Datei Hochladen</h1>
 
