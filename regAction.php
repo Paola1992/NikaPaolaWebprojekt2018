@@ -16,7 +16,6 @@ $email = $_POST["email"];
 $passwordOne = $_POST["passwordOne"];
 $passwordTwo = $_POST["passwordTwo"];
 
-
 //Prüfung ob Passwörter identisch oder leer oder Benutzername leer.
   if ($passwordOne != $passwordTwo OR $username == "" OR $passwordOne == "") {
      header("Location:regError.php");
