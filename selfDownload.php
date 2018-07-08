@@ -31,7 +31,6 @@ if ($allFiles == 1){
         header('Content-Disposition: attachment; filename="'.$filename.'"');
         readfile($file);
     }
-
 } else {
 
     // Wenn Download nicht funktioniert

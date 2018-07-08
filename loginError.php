@@ -30,9 +30,7 @@ include "indexNav.php";
 
 <!--Einloggen Formular-->
 <div class="site-wrapper">
-
     <div class="site-wrapper-inner">
-
         <div class="cover-container">
             <div class="inner cover">
                 <h1 class="cover-heading">Einloggen</h1>

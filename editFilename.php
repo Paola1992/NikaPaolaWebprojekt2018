@@ -22,14 +22,12 @@ $oldFilename = $_GET["oldFilename"];
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
 
     <title>Save&ampSend</title>
-
 </head>
 <body>
 
 <?php
 include "dashboardNav.php";
 ?>
-
 <!-- Umbenennungsformular wird erstellt und leitet weiter auf editFilenameAction.php -->
     <div class="jumbotron">
         <div class="container">
@@ -42,7 +40,6 @@ include "dashboardNav.php";
             echo '<input class="btn btn-primary btn-lg" href="editFilenameAction.php" role="button" type="submit" target="self" value="Jetzt umbenennen"/></form>';
             echo "</div>";
             ?>
-
         </div>
 </body>
 </html>

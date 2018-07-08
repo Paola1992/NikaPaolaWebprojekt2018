@@ -24,6 +24,7 @@
 <?php
 include "dashboardNav.php";
 include "dashboardFiles.php";
+include "session.php";
 ?>
 <div class="container">
     <form action="uploadAction.php" method="post"

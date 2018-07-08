@@ -17,7 +17,7 @@ if ($query > 0){
     header('location: homeDashboard.php');
 } else {
     header( "Refresh:5; url=homeDashboard.php", true, 303);
-    echo 'Fehler beim zurückziehen der Freigabe! Automatische weiterleitung in 5 Sek.';
+    echo 'Fehler beim zurückziehen der Freigabe! Automatische weiterleitung in 5 Sekunden.';
 }
 
 ?>

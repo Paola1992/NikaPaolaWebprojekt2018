@@ -26,8 +26,6 @@ include "dbConnection.php";
 include "session.php";
 include "dashboardNav.php";
 
-
-###Inhalt der Datenbank + Download-Funktion + Editier-Funktion + Lösch-Funktion###
 $stmt = $dbConnect->query("SELECT id, filename, shareduser FROM share WHERE username='" . $_SESSION["username"] . "'");
 
 echo '<div class="table-responsive">';
@@ -47,7 +45,6 @@ while ($row = $stmt->fetch()) {
 }
 echo "</table>";
 echo "</div>";
-
 
 ?>
 

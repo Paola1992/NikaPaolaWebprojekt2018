@@ -48,7 +48,4 @@ include "indexNav.php";
 </footer>
 
 </body>
-
-
-
 </html>

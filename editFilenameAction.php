@@ -14,11 +14,8 @@ $fileID = $_POST["fileID"];
 $newFilename = $_POST["newFilename"];
 $oldFilename = $_POST["oldFilename"];
 
-echo $oldFilename;
-
 $pathinfo=pathinfo($oldFilename);
 $fileExtension=$pathinfo['extension'];
-echo $fileExtension;
 $newFilename = $newFilename.".".$fileExtension;
 
 // Name der Datei wird in beiden Tabellen geändert

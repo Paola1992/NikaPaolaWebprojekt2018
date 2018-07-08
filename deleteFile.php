@@ -9,6 +9,8 @@
 
 // Verbindung zur Datenbank wird hergestellt
 include "dbConnection.php";
+include "session.php";
+
 $fileID = $_GET["fileID"];
 $file = $_GET["file"];
 $file2 = 'uploads/'.$file;

@@ -28,6 +28,7 @@ $fileName = $_GET["fileName"];
 
 <?php
 include "dashboardNav.php";
+include "session.php";
 ?>
 <div>
     <form action="userShareAction.php" method="post">Mit wem möchtest du die Datei teilen?<br>
