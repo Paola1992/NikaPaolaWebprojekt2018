@@ -17,6 +17,8 @@
     <!-- Bootstrap -->
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
     <title>Save&ampSend</title>
 </head>
 <body>
@@ -26,7 +28,7 @@
     <div class="container-fluid">
         <a class="navbar-brand" href="index.php"><img
                     src="https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/logo/LogoSaveAndSendWeiß.svg" width="300"
-                    height="80"
+                    height="80"/>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
             <span class="navbar-toggler-icon"></span>
