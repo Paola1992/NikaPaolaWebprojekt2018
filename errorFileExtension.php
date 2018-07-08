@@ -20,15 +20,12 @@
     <title>Upload</title>
 </head>
 <body>
-
-
 <?php
 include "dashboardNav.php";
-header( "Refresh:5; url=homeDashboard.php", true, 303);
+header("Refresh:5; url=homeDashboard.php", true, 303);
 ?>
-
 <!--Warnung wegen Dateiformat-->
-<div class="alert alert-danger" role="alert">Dateiformat wird nicht unterstützt . Automatische weiterleitung in 5 Sek </div>
-
+<div class="alert alert-danger" role="alert">Dateiformat wird nicht unterstützt . Automatische weiterleitung in 5 Sek
+</div>
 </body>
 </html>

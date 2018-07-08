@@ -22,23 +22,10 @@
 
 <?php
 include "dashboardNav.php";
+header("Refresh:5; url=homeDashboard.php", true, 303);
 ?>
-
-<h1 class="margin-base-vertical">Jetzt Datei Hochladen</h1>
-
-<!--Warnung wegen Daten Volumen-->
-<div class="alert alert-danger" role="alert">Fehler beim Hochladen der Datei</div>
-
-<div class="col-sm-6">
-    <form class="form-signin" method="post" action="uploadAction.php">
-        <h2 class="form-signin-heading">Dateien uploaden</h2>
-        <div class="form-group">
-            <label for="exampleInputFile">Dateien hochladen</label>
-            <input type="file" id="uploadFile" name="file">
-        </div>
-        <button class="btn  btn-primary" type="submit"> Datei uploaden
-        </button>
-    </form>
-</div>
+<!--Fehler beim Hochladen der Datei-->
+<div class="alert alert-danger" role="alert">Fehler beim Hochladen der Datei . Automatische weiterleitung in 5 Sek</div>
+</body>
 </body>
 </html>

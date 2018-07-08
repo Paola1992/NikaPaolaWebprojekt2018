@@ -23,12 +23,10 @@
 
 <?php
 include "dashboardNav.php";
-header( "Refresh:5; url=homeDashboard.php", true, 303);
+header("Refresh:5; url=homeDashboard.php", true, 303);
 ?>
 
 <!--Warnung wegen Daten Volumen-->
-<div class="alert alert-danger" role="alert">Daten Volumen zu hoch . Automatische weiterleitung in 5 Sek </div>
-
-
+<div class="alert alert-danger" role="alert">Daten Volumen zu hoch . Automatische weiterleitung in 5 Sek</div>
 </body>
 </html>

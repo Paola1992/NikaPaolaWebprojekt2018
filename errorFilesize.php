@@ -23,11 +23,9 @@
 <body>
 <?php
 include "dashboardNav.php";
-header( "Refresh:5; url=homeDashboard.php", true, 303);
+header("Refresh:5; url=homeDashboard.php", true, 303);
 ?>
-
 <!--Warnung da Datei zu groß -->
-<div class="alert alert-danger" role="alert">Datei zu groß . Automatische weiterleitung in 5 Sek </div>
-
+<div class="alert alert-danger" role="alert">Datei zu groß . Automatische weiterleitung in 5 Sek</div>
 </body>
 </html>
