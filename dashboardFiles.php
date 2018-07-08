@@ -31,7 +31,7 @@ while ($row = $stmt2->fetch()) {
     $fileStatus = $row['status'];
     echo "<tr>";
     echo '<td><a href="uploads/' . $fileName . '">' . $fileName . '</td>';
-    $URL = 'https://mars.iuk.hdm-stuttgart.de/~ng046/mailShareDownload.php?fileID=' . $fileID;
+    $URL = 'https://mars.iuk.hdm-stuttgart.de/~pp020/mailShareDownload.php?fileID=' . $fileID;
     echo '<td>'.$fileSize.' MB</td>';
 
     //Buttons für die Weiterleitung der Datei zu Download, Umbennen und Löschen

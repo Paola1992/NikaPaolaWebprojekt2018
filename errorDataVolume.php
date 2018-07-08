@@ -20,25 +20,15 @@
     <title>Upload</title>
 </head>
 <body>
+
 <?php
 include "dashboardNav.php";
+header( "Refresh:5; url=homeDashboard.php", true, 303);
 ?>
 
-    <h1 class="margin-base-vertical">Jetzt Datei Hochladen</h1>
-
 <!--Warnung wegen Daten Volumen-->
-    <div class="alert alert-danger" role="alert">Daten Volumen zu hoch</div>
+<div class="alert alert-danger" role="alert">Daten Volumen zu hoch . Automatische weiterleitung in 5 Sek </div>
 
-    <div class="col-sm-6">
-        <form class="form-signin" method="post" action="uploadAction.php">
-            <h2 class="form-signin-heading">Dateien uploaden</h2>
-            <div class="form-group">
-                <label for="exampleInputFile">Dateien hochladen</label>
-                <input type="file" id="uploadFile" name="file">
-            </div>
-            <button class="btn  btn-primary" type="submit"> Datei uploaden
-            </button>
-        </form>
-    </div>
+
 </body>
 </html>

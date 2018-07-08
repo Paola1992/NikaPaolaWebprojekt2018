@@ -10,7 +10,7 @@
 
  $fileID = $_GET["fileID"];
 
- $stmt = $dbConnect->prepare("SELECT file, status FROM upload WHERE id=:fileID");
+ $stmt = $dbConnect->prepare("SELECT file, filename, status FROM upload WHERE id=:fileID");
  $stmt->bindparam(':fileID', $fileID);
  $stmt->execute();
 
@@ -18,15 +18,11 @@
 
  if ($fileData['status'] == 1){
      $file = 'uploads/'.$fileData['file'];
+     $filename = $fileData['filename'];
 
      if (file_exists($file)) {
-         header('Content-Description: File Transfer');
-         header('Content-Type: application/octet-stream');
-         header('Content-Disposition: attachment; filename="'.basename($file).'"');
-         header('Expires: 0');
-         header('Cache-Control: must-revalidate');
-         header('Pragma: public');
-         header('Content-Length: ' . filesize($file));
+         header('Content-Type: octet/stream');
+         header('Content-Disposition: attachment; filename="'.$filename.'"');
          readfile($file);
          header('location: homeDashboard.php');
      }

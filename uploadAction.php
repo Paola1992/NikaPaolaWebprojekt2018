@@ -20,14 +20,13 @@ $totalFilesize = array_sum($rowFilesize);
 $dataVolume = 500 - (array_sum($rowFilesize) / 1000000);
 
 if ($dataVolume > 0) {
-    //Prüfung ob die Datei bereits vorhanden
-    if (file_exists(str_replace(' ', '-', $_FILES['file']['tmp_name']))) {
 
         //Erstellen eines neuen benutzer- und datumsbezogenem Dateinamen
         date_default_timezone_set('Europe/Berlin');
 
         $file = $_FILES['file'];
         $fileName = $_FILES['file']['name'];
+        $fileNameSave = $fileName;
         $fileExtension = explode('.', $fileName);
         $fileExtension = strtolower(end($fileExtension));
         $username = $_SESSION["username"];
@@ -46,7 +45,7 @@ if ($dataVolume > 0) {
         {
             if ($fileError === 0) {
                 //Überprüfung ob Datei größer 5 MB
-                if ($fileSize <= 500000)
+                if ($fileSize <= 5000000)
                 {
                     $fileNameNew = basename($fileName);
                     $fileDestination = "uploads/".$fileNameNew;
@@ -57,7 +56,7 @@ if ($dataVolume > 0) {
 
                         //Datenbank-Eintrag der Datei mit zugehörigem Benutzer
                         $username = $_SESSION["username"];
-                        $insertFile = "INSERT INTO upload (file, user, fileSize, filename) VALUES ('$fileNameNew', '$username','$fileSize','$fileName')";
+                        $insertFile = "INSERT INTO upload (file, user, fileSize, filename) VALUES ('$fileNameNew', '$username','$fileSize','$fileNameSave')";
                         $sql = $dbConnect->prepare($insertFile);
                         $sql = $dbConnect->query($insertFile);
 
@@ -74,8 +73,5 @@ if ($dataVolume > 0) {
         } else {
             header("Location:errorFileExtension.php");
         }
-    } else {
-        header("Location:errorSameFile.php");
-    }
 } else header("Location:errorDataVolume.php");
 ?>

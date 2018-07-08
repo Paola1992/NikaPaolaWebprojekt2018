@@ -27,9 +27,11 @@ include "indexNav.php";
 ?>
 <div class="cover-container">
     <div class="logo">
-        <img src="https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/logo/LogoSaveAndSendGrau.svg" width="300" height="300"
+        <img src="https://mars.iuk.hdm-stuttgart.de/~pp020/pictures/logo/LogoSaveAndSendGrau.svg" width="300"
+             height="300"
              class="d-inline-block align-top" alt="">
-        <p class="lead">Wir machen sicheres Sharing Service für jedermann verfügbar. Melde dich bei Safe&Send an</p>
+        <p class="lead">Wir machen sicheres Sharing Service für jedermann verfügbar. Melde dich bei Save&Send an
+        </p>
         <p class="lead">
             <a href="login.php" class="btn btn-lg btn-default">Einloggen</a>
         </p>
@@ -37,11 +39,16 @@ include "indexNav.php";
     </div>
 </div>
 
-<div class="mastfoot">
-    <div class="inner">
-        <p> © copyright 2018 by Grünen, Patiño. <a href="impressum.php">Impressum</a></p>
+<footer>
+    <div class="navbar navbar-fixed-bottom">
+        <div class="container">
+            <p> © copyright 2018 by Grünen, Patiño. <a href="impressum.php">Impressum</a></p>
+        </div>
     </div>
-</div>
+</footer>
 
 </body>
+
+
+
 </html>
